@@ -1,0 +1,10 @@
+section {
+    flex-direction: column;
+}
+
+form {
+    width: 400px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+}

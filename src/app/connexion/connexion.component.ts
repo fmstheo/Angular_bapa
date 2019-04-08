@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { ID } from '../modele/id';
+import { AuthService } from '../services/auth.service';
 
 @Component({
   selector: 'app-connexion',
@@ -8,11 +9,9 @@ import { ID } from '../modele/id';
 })
 export class ConnexionComponent implements OnInit {
 
-  connecte:boolean=false;
-
   identifiants:ID={id:'', mdp:''};
 
-  constructor() { }
+  constructor(public authentification:AuthService) { }
 
   ngOnInit() {
     console.log("Coucou ID", this.identifiants.id);
@@ -20,6 +19,7 @@ export class ConnexionComponent implements OnInit {
 
   envoieID(){
     console.log("On a soumis le formulaire", this.identifiants);
+    this.authentification.setConnecte();
   }
 
 }

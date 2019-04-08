@@ -1,5 +1,5 @@
 <section>
-    <form *ngIf="!connecte" (ngSubmit)="envoieID()">
+    <form *ngIf="!authentification.connecte" (ngSubmit)="envoieID()">
         <label for="id">Saisissez un pseudo</label>
         <input name="id" [(ngModel)]="identifiants.id" placeholder="Votre pseudo" type="text" required>
         <label for="id">Saisissez votre mot de passe</label>
@@ -7,13 +7,13 @@
         <input type="submit" value="Se connecter">
         <input type="reset" value="Annuler">
     </form>
-    <button *ngIf="connecte">Se déconnecter</button>
+    <button *ngIf="authentification.connecte" (click)="authentification.setConnecte()">Se déconnecter</button>
     <p>
         <a href>Mot de passe oublié ?</a>
     </p>
     <form>
-        <label for="id">Saisissez une adresse mail</label>
-        <input name="oublieID" type="email" placeholder="Saisissez votre identifiant ou votre email">
+        <label for="oublieID">Saisissez une adresse mail</label>
+        <input name="oublieID" type="email" required placeholder="Saisissez votre identifiant ou votre email">
         <input type="submit" value="Recevoir un email">
     </form>
 </section>
