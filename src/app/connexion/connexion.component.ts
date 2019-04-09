@@ -17,7 +17,9 @@ export class ConnexionComponent implements OnInit {
    * Booléen permettant de gérer l'affichage du formulaire mot de passe oublié
    */
   mdpOublie:boolean = false;
-
+  /**
+   * @param authentification Pointer vers le service d'authentification (AuthService)
+   */
   constructor(public authentification:AuthService) { }
 
   ngOnInit() {
@@ -26,7 +28,8 @@ export class ConnexionComponent implements OnInit {
   /**
    * Méthode déclenchée sur le submit du formulaire pour récupérer les données
    */
-  envoieID(){
+  envoieID(argumentQuelconque){
+    console.log("Nous récupérons le formulaire : ", argumentQuelconque.value);
     console.log("On a soumis le formulaire", this.identifiants);
     this.authentification.setConnecte();
   }
