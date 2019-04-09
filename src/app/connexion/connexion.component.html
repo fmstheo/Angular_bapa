@@ -1,8 +1,8 @@
 <section>
   <form *ngIf="!authentification.connecte" (ngSubmit)="envoieID()">
     <label for="id">Saisissez un pseudo</label>
-    <input name="id" [(ngModel)]="identifiants.id" #iduser="ngModel" minlength="8" placeholder="Votre pseudo" required>
-    <!-- <div *ngif="iduser.control.invalid">Merci de saisir un pseudo de 8 carractères</div> -->
+    <input name="id" [(ngModel)]="identifiants.id" #iduser="ngModel" minlength="6" placeholder="Votre pseudo" required>
+    <div *ngIf="iduser.control.invalid">Merci de saisir un pseudo de 6 carractères</div>
     <label for="id">Saisissez votre mot de passe</label>
     <input name="mdp" [(ngModel)]="identifiants.mdp" placeholder="Votre mot de passe" required>
     <input type="submit" value="Se connecter">
@@ -20,5 +20,5 @@
     <input type="oublieID" type="email" placeholder="Saisissez votre identifiant">
     <input type="submit" value="Recevoir un email">
   </form>
-
+<a href routerLink="/intranet">Intranet</a>
 </section>
