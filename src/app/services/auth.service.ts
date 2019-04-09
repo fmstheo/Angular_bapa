@@ -13,7 +13,7 @@ export class AuthService {
    */
   connecte:boolean=false;
 
-  constructor() { }
+  constructor() {}
   /**
    * Methode nous permettant de rédéfinir l'état de la connexion
    */
