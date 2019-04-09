@@ -1,4 +1,4 @@
-section{
+section {
     width: 400px;
     margin: 60px auto;
     padding: 40px;
@@ -6,31 +6,50 @@ section{
     border-radius: 20px;
     box-shadow: 2px 2px 6px #333;
 }
-form{
-    
+
+form {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
 }
-form input{
+
+form input {
     margin: 10px;
 }
-.btn input{
+
+.btn input {
     border-radius: 6px;
     width: 12em;
     padding: 6px 0;
     border: 1px solid black;
     box-shadow: 2px 2px 2px #333;
 }
-input[value="Se connecter"],
-input[value="Recevoir un email"] {
+
+input[value="Se connecter"], input[value="Recevoir un email"] {
     background-color: teal;
 }
+
 input[value="Annuler"] {
-  background-color: #999;
+    background-color: #999;
 }
-section > p{
-    width: 200px;
+
+input[type='text'] {
+    
+}
+
+#btnDeco {
+    display: block;
+    margin: auto;
+}
+
+#oublieMdp {
+    display: block;
     margin: 30px auto;
+}
+
+.alerte{
+    color: tomato;
+    font-style: oblique;
+    font-size: 14px;
 }

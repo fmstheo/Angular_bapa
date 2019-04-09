@@ -7,9 +7,10 @@ export class AuthService {
   /**
    *  Variable indiquant si nous sommes connectés ou non
    */
-  connecte:boolean = false;
+  connecte: boolean = false;
+  oublie: boolean = false;
   constructor() {
-    
+
   }
   setConnecte() {
     this.connecte = !this.connecte;
