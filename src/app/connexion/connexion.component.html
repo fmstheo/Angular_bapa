@@ -1,0 +1,17 @@
+<section>
+  <form *ngIf="!authentification.connecte"(ngSubmit)="envoieID()">
+    <input type="text" name="id" [(ngModel)]="identifiants.id" placeholder="Votre pseudo">
+    <input type="password" name="mdp" [(ngModel)]="identifiants.mdp" placeholder="Votre mot de passe" required>
+    <input type="submit" value="Se connecter">
+    <input type="reset" value="annuler">
+  </form>
+    <button *ngIf="authentification.connecte">Se deconnecter</button>
+    <p>
+      <button (click)="mdp">Mot de passe oublié</a>
+    </p>
+    <form *ngIf="">
+      <input name="oublieID" type="email" placeholder="Saisissez votre identifiant">
+      <input type="submit" value="Recevoir un email">
+    </form>
+  </section>
+
