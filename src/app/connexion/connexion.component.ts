@@ -12,7 +12,7 @@ export class ConnexionComponent implements OnInit {
 
   identifiants:ID={id:'', mdp:''};
 
-  constructor(public authentification:AuthService) { }
+  constructor(public authentification:AuthService) {}
 
   ngOnInit() {
     console.log("Coucou ID", this.identifiants.id);

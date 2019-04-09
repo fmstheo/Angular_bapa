@@ -7,10 +7,10 @@
     <input name="id" [(ngModel)]="identifiants.id" placeholder="Votre pseudo" type="text" required>
     <label for="mdp">Saisissez votre mdp</label>
     <input name="mdp" [(ngModel)]="identifiants.mdp" placeholder="Votre mdp" type="text" required>
-    <input class="but-custom" type="submit" value="Se connecter">
+    <input class="but-custom" type="submit" value="Se Connecter">
     <input class="but-custom" type="reset" value="Annuler">
   </form>
-  <button *ngIf="authentification.connecte" (click)="autehtifiaction.SetConnecte()">Se déconnecter</button>
+  <button *ngIf="authentification.connecte" (click)="authentification.setConnecte()">Se déconnecter</button>
     <p>
       <a href>Mot de passe oublié ?</a>
     </p>
