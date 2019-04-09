@@ -1,0 +1,30 @@
+section {
+    flex-direction: column;
+    width: 400px;
+    text-align: center;
+    margin: auto;
+}
+form {
+    width: 400px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+}
+.but-custom {
+    width: 100px;
+    margin: auto;
+    margin-top: 10px;
+}
+p {
+    margin: auto;
+    width: 180px;
+    margin-top: 75px;
+    margin-bottom: 10px;
+    background-color: aqua;
+    border-radius: 4px;
+}
+.title {
+    text-align: center;
+    text-decoration: none;
+    color: red;
+}
