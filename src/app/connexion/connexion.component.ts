@@ -21,6 +21,9 @@ export class ConnexionComponent implements OnInit {
       console.log("formulaires fournies",this.identifiants);
       this.authentification.setConnecte();
     }
+    mdpOublie(){
+      this.authentification.setforgot();
+    }
   
 
 }

@@ -7,9 +7,9 @@
   </form>
     <button *ngIf="authentification.connecte">Se deconnecter</button>
     <p>
-      <button (click)="mdp">Mot de passe oublié</a>
+      <button (click)="mdpOublie()">Mot de passe oublié</button>
     </p>
-    <form *ngIf="">
+    <form *ngIf="authentification.oublie">
       <input name="oublieID" type="email" placeholder="Saisissez votre identifiant">
       <input type="submit" value="Recevoir un email">
     </form>
