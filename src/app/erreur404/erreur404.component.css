@@ -1,0 +1,14 @@
+p{
+    background-color: white;
+    text-align: center;
+    width: 400px;
+    margin-top: 50px;;
+    margin-right: auto;
+    margin-left: auto;
+    padding :10px;
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+    box-shadow: 2px 2px 12px rgb(0, 0, 0);
+    border-radius: 10px; 
+  }
