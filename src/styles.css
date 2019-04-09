@@ -1,4 +1,5 @@
 html, body{
+    background-color: rgb(7, 149, 214);
     width: 100%;
     height: 100%;
     padding: 0;
@@ -6,8 +7,8 @@ html, body{
 }
 
 section{
-    display:flex;
-    flex-flow: wrap;
+    /* display:flex;
+    flex-flow: wrap;  */
 }
 
 input[type="text"]{
@@ -20,12 +21,15 @@ input[type="reset"]{
     background: rgb(241, 31, 41); /* this is a light blue */
 }
 
-input[type="submit"], input[type="reset"]{
+input[type="submit"], input[type="reset"], button{
     margin: auto;
-    width: 50%;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    width: 80%;
     color: white;
     border-radius: 4px;
     text-shadow: 0 1px 1px rgba(0, 0, 0, 0.2);
+    
 }
 
 form input.ng-valid{
