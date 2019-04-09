@@ -2,19 +2,32 @@
   Formulaire de Connexion
 </p>
 <section>
-  <form *ngIf="!authentification.connecte" (ngSubmit)="envoieID()"> 
+  <form *ngIf="!authentification.connecte" (ngSubmit)="envoieId(monFormulaire)" #monFormulaire="ngForm"> 
+
     <label for="id">Saisissez votre pseudo</label>
-    <input name="id" [(ngModel)]="identifiants.id" placeholder="Votre pseudo" type="text" required>
+      <input name="id" [(ngModel)]="identifiants.id" #idPseudo="ngModel" pattern="[A-Z]{1}[A-Za-z -]{2,15}" placeholder="Votre pseudo" type="text" required>
+        <div *ngIf="idPseudo.control.invalid">Merci de saisir un pseudo de 3 et 16 caractères et commençant par une majuscule</div>
+    
     <label for="mdp">Saisissez votre mdp</label>
-    <input name="mdp" [(ngModel)]="identifiants.mdp" placeholder="Votre mdp" type="text" required>
-    <input class="but-custom" type="submit" value="Se Connecter">
-    <input class="but-custom" type="reset" value="Annuler">
+      <input name="mdp" [(ngModel)]="identifiants.mdp" #idMdp="ngModel" minlength="4" placeholder="Votre mdp" type="text" required>
+        <div *ngIf="idMdp.control.invalid">Merci de saisir un mdp de 4 caractères minimum</div>
+      
+      <input class="but-custom" type="submit" value="Se Connecter">
+      <input class="but-custom" type="reset" value="Annuler">
+
   </form>
-  <button *ngIf="authentification.connecte" (click)="authentification.setConnecte()">Se déconnecter</button>
-    <p>
-      <a href>Mot de passe oublié ?</a>
-    </p>
+  <div>
+    <button *ngIf="authentification.connecte" (click)="authentification.setConnecte()">Se déconnecter</button>
+  </div>
+    <button (click)="setMdpOublie()" class="but-custom">MDP Oublié ?</button>
+
+  <form *ngIf="mdpOublie" (ngSubmit)="envoieId()">
+
     <label for="email">Saisissez votre email</label>
-    <input type="email" name="oublieId" placeholder="Saisissez votre email" required>
-    <input class="but-custom" type="submit" value="Recevoir Email">
+      <input type="email" name="oublieId" placeholder="Saisissez votre email" required>
+
+      <input class="but-custom" type="submit" value="Recevoir Email">
+
+  </form>
+
 </section>
