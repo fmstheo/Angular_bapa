@@ -13,7 +13,7 @@ import { TokenService } from './services/token.service';
   declarations: [
     AppComponent,
     ConnexionComponent,
-    Erreur404Component
+    Erreur404Component,
   ],
   imports: [
     BrowserModule,

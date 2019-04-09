@@ -5,8 +5,9 @@ import { Erreur404Component } from './erreur404/erreur404.component';
 
 const routes: Routes = [
   { path: '', component: ConnexionComponent },
-  {path:'connexion',component:ConnexionComponent},
-  {path:'**',component:Erreur404Component}
+  { path: 'connexion', component: ConnexionComponent },
+  { path: 'intranet', loadChildren: './intranet/intranet.module#IntranetModule' },
+  { path: '**', component: Erreur404Component }
 ];
 
 @NgModule({

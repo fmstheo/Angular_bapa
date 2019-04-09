@@ -1,8 +1,8 @@
 <section>
   <form *ngIf="!authentification.connecte && !oublie" (ngSubmit)="envoieID(form1)" #form1="ngForm">
     <label for="id">Votre pseudo : </label>
-    <div class="alerte" *ngIf="pseudo.control.invalid">Merci de renseigner votre pseudo</div>
-    <input type="text" name='id' [(ngModel)]="identifiants.id" #pseudo="ngModel" placeholder="Votre pseudo" required>
+    <div class="alerte" *ngIf="pseudo.control.invalid">Merci de renseigner un pseudo valide <br>(6 caractères minimum)</div>
+    <input type="text" name='id' [(ngModel)]="identifiants.id" #pseudo="ngModel" placeholder="Votre pseudo" minlength="6" required>
     <label for="mdp">Votre mot de passe : </label>
     <input type="text" name='mdp' [(ngModel)]="identifiants.mdp" placeholder="Votre mot de passe" required>
     <div class="btn">
@@ -13,6 +13,10 @@
   
   <button id="btnDeco" *ngIf='authentification.connecte' (click)="envoieID()">Se déconnecter</button>
   <button id="oublieMdp" *ngIf='!oublie && !authentification.connecte' (click)="setForgotPwd()">Mot de passe oublié ?</button>
+
+  <div>
+    <a href routerLink="/intranet">rentrez sur le site</a>
+  </div>
 
   <form *ngIf='oublie' (ngSubmit)="setForgotPwd()">
     <label for="">Saisissez votre adresse email : </label>

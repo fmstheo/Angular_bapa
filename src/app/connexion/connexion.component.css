@@ -52,4 +52,5 @@ input[type='text'] {
     color: tomato;
     font-style: oblique;
     font-size: 14px;
+    text-align: center;
 }
