@@ -1,7 +1,9 @@
 [{
     "idPersonnel": 0,
     "dateDebutConges":"24/12/2018",
+    "heureDebutConges":"8h30",
     "dateFinConges":"31/12/2018",
+    "heureFinConges":"16h30",
     "MotifConges":"Congés Payés",
     "Statut":"Validation manager"
    
@@ -9,7 +11,9 @@
 {
     "idPersonnel": 0,
     "dateDebutConges":"04/01/2019",
+    "heureDebutConges":"8h30",
     "dateFinConges":"11/01/2019",
+    "heureFinConges":"16h30",
     "MotifConges":"Maladie",
     "Statut":"Validation manager"
    
@@ -17,7 +21,9 @@
 {
     "idPersonnel": 0,
     "dateDebutConges":"05/03/2019",
+    "heureDebutConges":"8h30",
     "dateFinConges":"05/03/2019",
+    "heureFinConges":"16h30",
     "MotifConges":"Mariage du salarié",
     "Statut":"En attente"
    

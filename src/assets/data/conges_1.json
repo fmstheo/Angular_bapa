@@ -2,7 +2,9 @@
 {
     "idPersonnel": 1,
     "dateDebutConges":"28/03/2019",
+    "heureDebutConges":"8h30",
     "dateFinConges":"29/03/2019",
+    "heureFinConges":"16h30",
     "MotifConges":"Récupération",
     "Statut":"Validation manager"
    
@@ -10,7 +12,9 @@
 {
     "idPersonnel": 1,
     "dateDebutConges":"08/04/2019",
+    "heureDebutConges":"8h30",
     "dateFinConges":"08/04/2019",
+    "heureFinConges":"16h30",
     "MotifConges":"Naissance",
     "Statut":"En cours"
    
