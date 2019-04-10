@@ -1,0 +1,17 @@
+[
+{
+    "idPersonnel": 1,
+    "dateDebutConges":"28/03/2019",
+    "dateFinConges":"29/03/2019",
+    "MotifConges":"Récupération",
+    "Statut":"Validation manager"
+   
+},
+{
+    "idPersonnel": 1,
+    "dateDebutConges":"08/04/2019",
+    "dateFinConges":"08/04/2019",
+    "MotifConges":"Naissance",
+    "Statut":"En cours"
+   
+}]

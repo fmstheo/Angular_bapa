@@ -5,13 +5,17 @@
         <label for="id">Saisissez votre mot de passe</label>
         <input name="mdp" [(ngModel)]="identifiants.mdp" placeholder="Votre mot de passe" type="text" required>
         <input type="submit" value="Se connecter">
-        <input type="reset" value="Annuler">
+        <input type="reset" value="Annuler">        
     </form>
+
+    <a *ngIf="authentification.connecte" href='./intranet'>Accès Intranet</a> 
+
     <button *ngIf="authentification.connecte" (click)="authentification.setConnecte()">Se déconnecter</button>
     <p>
-        <a href>Mot de passe oublié ?</a>
+    <button *ngIf="!oubli"(click)="setForgot()">Mot de passe oublié ?</button>
     </p>
-    <form>
+
+    <form *ngIf="oubli" (ngSubmit)="setForgot()">
         <label for="oublieID">Saisissez une adresse mail</label>
         <input name="oublieID" type="email" required placeholder="Saisissez votre identifiant ou votre email">
         <input type="submit" value="Recevoir un email">

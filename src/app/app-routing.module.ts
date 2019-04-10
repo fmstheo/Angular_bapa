@@ -6,6 +6,7 @@ import { Erreur404Component } from './erreur404/erreur404.component';
 const routes: Routes = [
   {path:'', component:ConnexionComponent},
   {path:'connexion', component:ConnexionComponent},
+  {path:'intranet', loadChildren:'./intranet/intranet.module#IntranetModule'}, //télécharge les fichiers indiqués
   {path:'**', component:Erreur404Component}
 ];
 

@@ -21,5 +21,10 @@ export class ConnexionComponent implements OnInit {
     console.log("On a soumis le formulaire", this.identifiants);
     this.authentification.setConnecte();
   }
+  
+  oubli:boolean=false;
 
+  setForgot(){
+    this.oubli = !this.oubli;
+  }
 }

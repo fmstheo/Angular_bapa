@@ -1,0 +1,24 @@
+[{
+    "idPersonnel": 0,
+    "dateDebutConges":"24/12/2018",
+    "dateFinConges":"31/12/2018",
+    "MotifConges":"Congés Payés",
+    "Statut":"Validation manager"
+   
+},
+{
+    "idPersonnel": 0,
+    "dateDebutConges":"04/01/2019",
+    "dateFinConges":"11/01/2019",
+    "MotifConges":"Maladie",
+    "Statut":"Validation manager"
+   
+},
+{
+    "idPersonnel": 0,
+    "dateDebutConges":"05/03/2019",
+    "dateFinConges":"05/03/2019",
+    "MotifConges":"Mariage du salarié",
+    "Statut":"En attente"
+   
+}]
