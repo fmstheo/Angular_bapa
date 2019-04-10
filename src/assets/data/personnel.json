@@ -1,0 +1,29 @@
+[{
+        "idPersonnel": 0,
+        "telP": "0558000000",
+        "nomP": "Fabrice",
+        "prenomP": "Bellabia",
+        "postePrincipalP": "Développeur",
+        "loginP": "fb",
+        "mdpP": "bf",
+        "idService": 1,
+        "email": "f@b.fr",
+        "matricule": 12,
+        "idManager": 1,
+        "actif": 1
+    },
+    {
+        "idPersonnel": 0,
+        "telP": "0558111111",
+        "nomP": "Manu",
+        "prenomP": "Lefevre",
+        "postePrincipalP": "Développeur",
+        "loginP": "ml",
+        "mdpP": "lm",
+        "idService": 1,
+        "email": "m@l.fr",
+        "matricule": 11,
+        "idManager": 1,
+        "actif": 1
+    }
+]
