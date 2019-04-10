@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 <p class="title">
   Formulaire de Connexion
 </p>
@@ -31,24 +30,4 @@
 
   </form>
 
-=======
-<section>
-    <form *ngIf="!authentification.connecte" (ngSubmit)="envoieID()">
-        <label for="id">Saisissez un pseudo</label>
-        <input name="id" [(ngModel)]="identifiants.id" placeholder="Votre pseudo" type="text" required>
-        <label for="id">Saisissez votre mot de passe</label>
-        <input name="mdp" [(ngModel)]="identifiants.mdp" placeholder="Votre mot de passe" type="text" required>
-        <input type="submit" value="Se connecter">
-        <input type="reset" value="Annuler">
-    </form>
-    <button *ngIf="authentification.connecte" (click)="authentification.setConnecte()">Se déconnecter</button>
-    <p>
-        <a href>Mot de passe oublié ?</a>
-    </p>
-    <form>
-        <label for="oublieID">Saisissez une adresse mail</label>
-        <input name="oublieID" type="email" required placeholder="Saisissez votre identifiant ou votre email">
-        <input type="submit" value="Recevoir un email">
-    </form>
->>>>>>> 0c29ef0b59bcb0adc085beb876491753ccafd8dd
 </section>

@@ -8,20 +8,12 @@ import { ConnexionComponent } from './connexion/connexion.component';
 import { Erreur404Component } from './erreur404/erreur404.component';
 import { AuthService } from './services/auth.service';
 import { TokenService } from './services/token.service';
-<<<<<<< HEAD
-
-=======
->>>>>>> 0c29ef0b59bcb0adc085beb876491753ccafd8dd
 
 @NgModule({
   declarations: [
     AppComponent,
     ConnexionComponent,
-<<<<<<< HEAD
     Erreur404Component,
-=======
-    Erreur404Component
->>>>>>> 0c29ef0b59bcb0adc085beb876491753ccafd8dd
   ],
   imports: [
     BrowserModule,

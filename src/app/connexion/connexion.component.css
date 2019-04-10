@@ -1,20 +1,14 @@
 section {
     flex-direction: column;
-<<<<<<< HEAD
     width: 400px;
     text-align: center;
     margin: auto;
 }
-=======
-}
-
->>>>>>> 0c29ef0b59bcb0adc085beb876491753ccafd8dd
 form {
     width: 400px;
     margin: auto;
     display: flex;
     flex-direction: column;
-<<<<<<< HEAD
 }
 .but-custom {
     width: 100px;
@@ -33,6 +27,4 @@ p {
     text-align: center;
     text-decoration: none;
     color: red;
-=======
->>>>>>> 0c29ef0b59bcb0adc085beb876491753ccafd8dd
 }
