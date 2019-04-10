@@ -14,6 +14,7 @@ const routes: Routes = [
       { path: 'faq', component: FaqComponent }
     ]
   },
+  { path: 'administration', loadChildren: './administration/administration.module#AdministrationModule' },
 ];
 
 @NgModule({

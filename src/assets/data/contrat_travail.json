@@ -1,0 +1,25 @@
+[{
+    "idContrat": 0,
+    "idPersonnel": 0,
+    "intitule": "Développeur Web/Web mobile",
+    "nomP": "Fabrice",
+    "prenomP": "Bellavia",
+    "typeContrat" : "CDD",
+    "dateDeb" : "17/09/2018",
+    "dateFin" : "31/10/2019",
+    "nbHeureSem": "35",
+    "echelon": 1
+  },
+  {
+    "idContrat": 1,
+    "idPersonnel": 1,
+    "intitule": "Développeur Web/Web mobile",
+    "nomP": "Emmanuel",
+    "prenomP": "LEFEBRE",
+    "typeContrat": "CDD",
+    "dateDeb": "17/09/2018",
+    "dateFin": "31/10/2019",
+    "nbHeureSem": "35",
+    "echelon": 1
+  }
+]
