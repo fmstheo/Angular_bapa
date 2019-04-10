@@ -5,3 +5,7 @@ form,a {
     align-items: center;
     margin-top: 100px;
 }
+button {
+    display:block;
+    margin:auto;
+}

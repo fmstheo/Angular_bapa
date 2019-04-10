@@ -7,18 +7,23 @@ import { ConnexionComponent } from './connexion/connexion.component';
 import { Erreur404Component } from './erreur404/erreur404.component';
 import { TokenService } from './services/token.service';
 import { AuthService } from './services/auth.service';
-import { FormsModule} from '@angular/forms'
+import { FormsModule} from '@angular/forms';
+import { HttpClientModule } from '@angular/common/http';
+
 
 @NgModule({
   declarations: [
     AppComponent,
     ConnexionComponent,
-    Erreur404Component
+    Erreur404Component,
+   
   ],
   imports: [
     BrowserModule,
     FormsModule,
-    AppRoutingModule
+    AppRoutingModule,
+    HttpClientModule,
+    
   ],
   providers: [TokenService,AuthService],
   bootstrap: [AppComponent]

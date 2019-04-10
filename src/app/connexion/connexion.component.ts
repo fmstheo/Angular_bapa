@@ -17,7 +17,8 @@ export class ConnexionComponent implements OnInit {
 
   ngOnInit() {
   }
-    envoieID(){
+    envoieID(f){
+      console.log(f);
       console.log("formulaires fournies",this.identifiants);
       this.authentification.setConnecte();
     }
