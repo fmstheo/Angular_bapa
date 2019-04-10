@@ -8,6 +8,8 @@ import { FaqComponent } from './faq/faq.component';
 import { DashboardComponent } from './dashboard/dashboard.component';
 import { FaqService } from './services/faq.service';
 import { ManagerComponent } from './manager/manager.component';
+import { ManagerService } from './services/manager.service';
+
 
 @NgModule({
   declarations: [
@@ -21,6 +23,9 @@ import { ManagerComponent } from './manager/manager.component';
     CommonModule,
     IntranetRoutingModule
   ],
-  providers: [FaqService]
+  providers: [
+    FaqService,
+    ManagerService
+  ],
 })
 export class IntranetModule { }
