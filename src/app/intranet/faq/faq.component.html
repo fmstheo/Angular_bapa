@@ -3,7 +3,7 @@
         <h2>Questions fréquentes</h2>
     </header>
     <h3>Sélectionnez une question</h3>
-    <select (change)="selectQuestion($event.target.value)" name="questions" #s>
+    <select (change)="selectQuestion($event.target.value)" name="questions">
         <option value="null"></option>
         <option *ngFor="let f of faqService.faqListe; let i=index" [value]="i">{{f.question}}</option>
     </select>
