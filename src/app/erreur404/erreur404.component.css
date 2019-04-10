@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 p{
     background-color: white;
     text-align: center;
@@ -12,3 +13,16 @@ p{
     box-shadow: 2px 2px 12px rgb(0, 0, 0);
     border-radius: 10px; 
   }
+=======
+h1, h3 , a{
+  text-align: center;
+  color: tomato;
+  font-style: oblique;
+  text-shadow: 1px 1px 1px black;
+}
+
+section {
+  display: flex;
+  justify-content: center;
+}
+>>>>>>> 8309cb4b60d15c704f39da0f6ce53c1ed6dc099a
