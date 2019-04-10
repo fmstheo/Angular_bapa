@@ -1,22 +1,27 @@
 <section>
-  <form *ngIf="!authentification.connecte"(ngSubmit)="envoieID(monformulaire)" #monformulaire="ngForm">
+  <form *ngIf="!authentification.connecte" (ngSubmit)="envoieID(monformulaire)" #monformulaire="ngForm">
     <input type="text" name="id" [(ngModel)]="identifiants.id" placeholder="Votre pseudo">
     <input type="password" name="mdp" [(ngModel)]="identifiants.mdp" placeholder="Votre mot de passe" required>
     <input type="submit" value="Se connecter">
     <input type="reset" value="annuler">
   </form>
-  <div>
-      <a *ngIf="authentification.connecte" href routerLink="/intranet"></a>
-    <button *ngIf="authentification.connecte" (click)="envoieID()">Se deconnecter</button>
-    
-      </div>
-      
-      <button (click)="mdpOublie()">Mot de passe oublié</button>
-      
-    
-    <form *ngIf="authentification.oublie">
-      <input name="oublieID" type="email" placeholder="Saisissez votre identifiant">
-      <input type="submit" value="Recevoir un email">
-    </form>
-  </section>
 
+  <p>
+    <button (click)="setMdpOublie()">Mot de passe oublié ?</button>
+  </p>
+  <div *ngIf="authentification.connecte">
+    <button (click)="authentification.setConnecte()">Se déconnecter</button>
+    <a href routerLink="/intranet">Aller sur l'Intranet</a>
+  </div>
+
+
+
+
+
+
+
+  <form *ngIf="authentification.oublie">
+    <input name="oublieID" type="email" placeholder="Saisissez votre identifiant">
+    <input type="submit" value="Recevoir un email">
+  </form>
+</section>
