@@ -1,6 +1,7 @@
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
-import { AccueilComponent }  from './accueil/accueil.component';
+import { AccueilComponent } from './accueil/accueil.component';
+import { MenuComponent } from './menu/menu.component';
 
 
 
