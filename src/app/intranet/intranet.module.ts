@@ -6,12 +6,19 @@ import { IntranetRoutingModule } from './intranet-routing.module';
 import { FooterComponent } from './footer/footer.component';
 import { FaqComponent } from './faq/faq.component';
 import { DashboardComponent } from './dashboard/dashboard.component';
+import { FaqService } from './services/faq.service';
 
 @NgModule({
-  declarations: [AccueilComponent, MenuComponent, FooterComponent, FaqComponent, DashboardComponent],
+  declarations: [
+    AccueilComponent,
+    MenuComponent,
+    FooterComponent,
+    FaqComponent,
+    DashboardComponent],
   imports: [
     CommonModule,
     IntranetRoutingModule
-  ]
+  ],
+  providers: [FaqService]
 })
 export class IntranetModule { }

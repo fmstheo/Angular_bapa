@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { HttpClient } from '@angular/common/http';
+import { FaqService } from '../services/faq.service';
 
 @Component({
   selector: 'app-faq',
@@ -7,7 +9,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class FaqComponent implements OnInit {
 
-  constructor() { }
+  constructor(public faqService:FaqService) { }
 
   ngOnInit() {
   }
