@@ -1,0 +1,35 @@
+nav {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  background-color: rgb(14, 139, 139);
+  box-shadow: 4px 1px 2px #333;
+}
+
+nav ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+nav ul li {
+  list-style-type: none;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: wheat;
+  transition: all 0.5s ease;
+  text-shadow: 2px 1px 4px #333;
+}
+
+nav ul li a:hover,
+nav ul li a.active {
+  color: white;
+  font-weight: bold;
+  background-color: #129C9B;
+  padding: 16px;
+  text-shadow: 2px 2px 4px #333;
+
+}

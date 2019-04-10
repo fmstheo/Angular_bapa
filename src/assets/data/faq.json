@@ -1,0 +1,19 @@
+[{
+    "id": 0,
+    "question": "C'est quoi que comment ça marche ?",
+    "description": "C'est qu'il faut cliquer sur le bouton du menu pour accéder à la page.",
+    "note": 5
+  },
+  {
+    "id": 1,
+    "question": "C'est quand quand qu'on a des congès ?",
+    "description": "Il faut aller dans la page congès et poser de 250 à 350 jours dans le planning",
+    "note": 5
+  },
+  {
+    "id": 2,
+    "question": "Est-ce que c'est que c'est que je peux voir la partie admin ?",
+    "description": "Tu peux voir l'admin si tu es un admin, sinon c'est forbidden nicht ! Au pire demande à Greg de hacker l'Internet, on sait jamais.",
+    "note": 2
+  }
+]

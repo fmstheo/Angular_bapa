@@ -1,0 +1,14 @@
+article {
+    display: flex;
+    flex-direction: column;
+}
+
+article h3 {
+    color: crimson;
+    padding: 10px 20px;
+    background-color: #FFF;
+}
+
+article h3:even {
+    background-color: #E9E9E9;
+}
