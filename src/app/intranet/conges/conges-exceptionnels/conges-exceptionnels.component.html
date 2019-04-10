@@ -1,3 +1,31 @@
-<form>
-  
-</form>
+<section class="congesExceptionnels">
+
+  <h1>Demande de congés exceptionnels</h1>
+
+  <form>
+
+      <label for="dateDebutConges">Veuillez saisir votre date de départ : </label>
+      <input class='debutConges' type="date" id="dateDebutConges" name="dateDebutConges" />
+
+      <label for="heureDebutConges">Veuillez saisir votre heure de départ : </label>
+      <input class='debutConges' type="time" id="heure_depart" name="heure_depart" />
+
+
+      <label for="date_retour">Veuillez saisir votre date de retour : </label>
+      <input class='retour' type="date" id="date_retour" name="date_retour" min="<?$_GET['date_depart']?>"/>
+
+      <label for="heure_retour">Veuillez saisir votre heure de retour : </label>
+      <input class='retour' type="time" id="heure_retour" name="heure_retour" />
+
+      <label for="collaborateur">Choisissez un collaborateur :</label>
+      <?php echo $html_c; ?>
+
+      <label for="vehicule">Choissisez un véhicule : </label>
+      <?php echo $html_v;?>
+
+      <input class='btn' type="submit" name="btn" value="Ajouter"/>
+
+
+  </form>
+
+</section>
