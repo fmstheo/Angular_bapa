@@ -1,3 +1,10 @@
-<p>
-  faq works!
-</p>
+<section>
+  <header>
+    <h2>Questions fréquentes</h2>
+  </header>
+  <article *ngFor="let faq of faqService.faqListe; let i=index">
+    <h3>{{(i+1) +' - '+ faq.question }}</h3>
+    <p>{{ faq.description }}</p>
+    <p *ngIf="faq.note">{{ faq.note }}</p>
+  </article>
+</section>
