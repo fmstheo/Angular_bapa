@@ -30,7 +30,7 @@
     <fieldset>
       <Legend>Nouvelle absence</Legend>
       <label>Nom</label><br />
-      <select [(ngModel)]="nom">
+      <select>
         <option>Nom</option>
         <option>Bellavia</option>
         <option>Beras</option>
@@ -45,7 +45,7 @@
       </select><br />
 
       <label>Prénom</label><br />
-      <input [(ngModel)]="prenom" /><br />
+      <input/><br />
 
       <label>Matricule</label><br />
       <input /><br />
@@ -68,6 +68,7 @@
         <option>Congès parental</option>
         <option>Congès présence parentale</option>
         <option>Maladie</option>
+        <option>Autre</option>
       </select><br />
 
       <label>Date de début abs</label><br />
@@ -81,6 +82,7 @@
         <option>Valider</option>
         <option>Refusé</option>
         <option>En attente</option>
+        <option>non justifié</option>
       </select><br />
       <input type="submit" value="Valider" /><br />
 

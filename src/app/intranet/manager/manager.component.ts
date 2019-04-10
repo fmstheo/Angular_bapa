@@ -8,7 +8,6 @@ import { ManagerService } from '../services/manager.service';
 })
 export class ManagerComponent implements OnInit {
 
-  @Input()prenom:string;
 
   constructor(public managerService:ManagerService) { }
 
