@@ -12,7 +12,7 @@ export class ConnexionComponent implements OnInit {
    * Objet type ID pour stocker les identifiants saisis dans le formulaire
    * Double binding avec ngModel dans le formulaire
    */
-  identifiants:ID={id:'', mdp:''};
+  identifiants:ID={id:'', mdp:'', infos:''};
   /**
    * Booléen permettant de gérer l'affichage du formulaire mot de passe oublié
    */

@@ -46,7 +46,8 @@ form input.ng-invalid {
     border: 3px solid red;
 }
 
-input {
+input,
+select {
     background-color: rgba(255, 255, 255, .6);
     border-color: #FFF;
     padding: 10px 18px;
@@ -81,3 +82,10 @@ nav.h li {
 }
 
 nav li a:hover {}
+
+hr {
+    width: 100%;
+    clear: both;
+    height: 3px;
+    color: #FFF;
+}

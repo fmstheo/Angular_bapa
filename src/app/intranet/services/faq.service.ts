@@ -9,6 +9,7 @@ import { Faq } from '../modeles/faq';
 export class FaqService {
 
   faqListe:Array<Faq>;
+  // faqListe:Faq[];
 
   constructor(public requetes:HttpClient) {
     this.getFaq(); // Appel des données externes

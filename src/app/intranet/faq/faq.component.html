@@ -2,8 +2,23 @@
     <header>
         <h2>Questions fréquentes</h2>
     </header>
+    <h3>Sélectionnez une question</h3>
+    <select (change)="selectQuestion($event.target.value)" name="questions" #s>
+        <option value="null"></option>
+        <option *ngFor="let f of faqService.faqListe; let i=index" [value]="i">{{f.question}}</option>
+    </select>
+
+    <article>
+        <h4>{{ questionChoisie.question }}</h4>
+        <p>{{ questionChoisie.description }}</p>
+        <p *ngIf="questionChoisie.note">{{ questionChoisie.note }}</p>
+    </article>
+
+    <hr>
+
+    <h3>Liste des questions</h3>
     <article *ngFor="let faq of faqService.faqListe; let i=index">
-        <h3>{{(i+1) +' - '+ faq.question }}</h3>
+        <h4>{{(i+1) +' - '+ faq.question }}</h4>
         <p>{{ faq.description }}</p>
         <p *ngIf="faq.note">{{ faq.note }}</p>
     </article>

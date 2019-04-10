@@ -1,5 +1,7 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
+import { FormsModule } from '@angular/forms';
+
 import { AccueilComponent } from './accueil/accueil.component';
 import { MenuComponent } from './menu/menu.component';
 import { IntranetRoutingModule } from './intranet-routing.module';
@@ -17,6 +19,7 @@ import { FaqService } from './services/faq.service';
     DashboardComponent],
   imports: [
     CommonModule,
+    FormsModule,
     IntranetRoutingModule
   ],
   providers: [FaqService]
