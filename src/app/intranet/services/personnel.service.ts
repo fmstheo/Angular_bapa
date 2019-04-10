@@ -7,10 +7,11 @@ import { HttpClient } from '@angular/common/http';
 export class PersonnelService {
 
   constructor(public httpPersonnel : HttpClient) {
-
+    this.getPersonnel();
   }
-  getFaq() {
-    this.httpPersonnel.get('/assets/data/faq.json').subscribe(
+  
+  getPersonnel(){
+    this.httpPersonnel.get('/assets/data/personnel.json').subscribe(
       (data) => console.log(data)
     );
   }
