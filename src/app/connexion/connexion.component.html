@@ -12,7 +12,10 @@
     <p>
         <button (click)="setMdpOublie()">Mot de passe oublié ?</button>
     </p>
-    <button *ngIf="authentification.connecte" (click)="authentification.setConnecte()">Se déconnecter</button>
+    <div *ngIf="authentification.connecte">
+        <button (click)="authentification.setConnecte()">Se déconnecter</button>
+        <a href routerLink="/intranet">Aller sur l'Intranet</a>
+    </div>
     <form *ngIf="mdpOublie">
         <label for="oublieID">Saisissez une adresse mail</label>
         <input name="oublieID" type="email" required placeholder="Saisissez votre identifiant ou votre email">
