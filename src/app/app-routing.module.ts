@@ -7,6 +7,7 @@ const routes: Routes = [
   { path: '', component: ConnexionComponent },
   { path: 'connexion', component: ConnexionComponent },
   { path: 'intranet', loadChildren: './intranet/intranet.module#IntranetModule' },
+  // { path: 'administration', loadChildren: './intranet/administration/administration.module#AdministrationModule' },
   { path: '**', component: Erreur404Component }
 ];
 

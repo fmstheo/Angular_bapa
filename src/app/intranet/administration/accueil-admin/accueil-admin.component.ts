@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { AccueilComponent } from '../../accueil/accueil.component';
 
 @Component({
   selector: 'app-accueil-admin',
