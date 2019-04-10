@@ -25,6 +25,12 @@ a:hover {
 section {
     display: flex;
     flex-flow: row wrap;
+    margin: 10px 30px;
+}
+
+section header {
+    width: 100%;
+    margin: 20px 0;
 }
 
 input[type="text"] {
