@@ -1,17 +1,19 @@
 <section>
-    <form *ngIf="!authentification.connecte" (ngSubmit)="envoieID()">
+    <form *ngIf="!authentification.connecte" (ngSubmit)="envoieID(monFormulaire)" #monFormulaire="ngForm">
         <label for="id">Saisissez un pseudo</label>
-        <input name="id" [(ngModel)]="identifiants.id" placeholder="Votre pseudo" type="text" required>
+        <input name="id" [(ngModel)]="identifiants.id" #idUser="ngModel" minlength="8" placeholder="Votre pseudo" type="text" required (input)="getIdentifiants()">
+        <div *ngIf="idUser.control.invalid">Merci de saisir un pseudo de 8 caractères minimum</div>
         <label for="id">Saisissez votre mot de passe</label>
-        <input name="mdp" [(ngModel)]="identifiants.mdp" placeholder="Votre mot de passe" type="text" required>
+        <input name="mdp" [(ngModel)]="identifiants.mdp" #mdpUser="ngModel" placeholder="Votre mot de passe" type="password" required>
+        <div *ngIf="mdpUser.control.invalid">Votre mot de passe doit contenir au moins 8 caractères</div>
         <input type="submit" value="Se connecter">
         <input type="reset" value="Annuler">
     </form>
-    <button *ngIf="authentification.connecte" (click)="authentification.setConnecte()">Se déconnecter</button>
     <p>
-        <a href>Mot de passe oublié ?</a>
+        <button (click)="setMdpOublie()">Mot de passe oublié ?</button>
     </p>
-    <form>
+    <button *ngIf="authentification.connecte" (click)="authentification.setConnecte()">Se déconnecter</button>
+    <form *ngIf="mdpOublie">
         <label for="oublieID">Saisissez une adresse mail</label>
         <input name="oublieID" type="email" required placeholder="Saisissez votre identifiant ou votre email">
         <input type="submit" value="Recevoir un email">

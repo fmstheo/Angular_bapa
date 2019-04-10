@@ -11,6 +11,8 @@ export class ConnexionComponent implements OnInit {
 
   identifiants:ID={id:'', mdp:''};
 
+  mdpOublie:boolean = false;
+
   constructor(public authentification:AuthService) { }
 
   ngOnInit() {
@@ -22,4 +24,11 @@ export class ConnexionComponent implements OnInit {
     this.authentification.setConnecte();
   }
 
+  getIdentifiants(){
+    console.log("On a soumis le formulaire", this.identifiants);
+  }
+
+  setMdpOublie(){
+    this.mdpOublie = !this.mdpOublie;
+  }
 }
