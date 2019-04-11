@@ -1,0 +1,32 @@
+h1{
+    text-align: center;
+}
+h2{
+    width: 100%;
+    text-align: center;
+    font-weight: bold;
+}
+section{
+    display:flex;
+    flex-flow: wrap;
+    border-radius: 5px;
+    width: 80%;
+    margin: 40px auto  ;
+    padding: 1%;
+    background-color: rgb(233, 243, 255);
+    box-shadow: 2px 2px 12px rgb(0, 0, 0);
+    
+}
+
+article{
+    text-align: center;
+ 
+    /* box-shadow:  */
+    border-radius: 5px;
+    /* width: 80%; */
+    margin: 20px auto  ;
+    padding: 1%;
+    background-color: rgb(233, 243, 255);
+    box-shadow: 2px 2px 12px rgb(0, 0, 0);
+}
+
