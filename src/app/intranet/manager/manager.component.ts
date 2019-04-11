@@ -1,4 +1,5 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input } from '@angular/core';
+import { ManagerService } from '../services/manager.service';
 
 @Component({
   selector: 'app-manager',
@@ -7,7 +8,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ManagerComponent implements OnInit {
 
-  constructor() { }
+  constructor(public managerService:ManagerService) { }
 
   ngOnInit() {
   }
