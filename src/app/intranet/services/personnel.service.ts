@@ -1,15 +1,11 @@
 import { Injectable } from '@angular/core';
-<<<<<<< HEAD
 import { HttpClient } from '@angular/common/http';
-=======
->>>>>>> master
 
 @Injectable({
   providedIn: 'root'
 })
 export class PersonnelService {
 
-<<<<<<< HEAD
   constructor(public httpPersonnel : HttpClient) {
 
   }
@@ -18,7 +14,4 @@ export class PersonnelService {
       (data) => console.log(data)
     );
   }
-=======
-  constructor() { }
->>>>>>> master
 }
