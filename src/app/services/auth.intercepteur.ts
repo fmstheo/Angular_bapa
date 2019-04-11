@@ -11,6 +11,7 @@ export class AuthIntercepteur implements HttpInterceptor{
    * L'intercepteur clone un requête, transforme la requête clonée et l'envoie
    */
   constructor(public securite:TokenService) { }
+  
   intercept(req: HttpRequest<any>, next: HttpHandler): Observable<HttpEvent<any>> {
     console.log("Interception d'une requête ... ");
     // Cloner la requête
