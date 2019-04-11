@@ -1,6 +1,31 @@
-<p>
-  contrat-travail works!
-</p>
-<section *ngFor="let contrat of contrat.contratTravail">
-  <p>{{contrat.nomP}}</p>
-</section>
+<h2>Tableau des contrats de travail :</h2>
+<table>
+  <thead>
+    <tr>
+      <th>Id contrat</th>
+      <th>Id Employé</th>
+      <th>Intitulé du contrat</th>
+      <th>Nom employé</th>
+      <th>Prénom Employé</th>
+      <th>Type du contrat</th>
+      <th>Date de début</th>
+      <th>Date de fin</th>
+      <th>Nb heures/sem</th>
+      <th>Echelon employé</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr></tr>
+    <tr *ngFor="let contrat of contrat.contratTravail">
+      <td>{{contrat.idContrat}}</td>
+      <td>{{contrat.idPersonnel}}</td>
+      <td>{{contrat.intitule}}</td>
+      <td>{{contrat.nomP}}</td>
+      <td>{{contrat.prenomP}}</td>
+      <td>{{contrat.typeContrat}}</td>
+      <td>{{contrat.dateDeb}}</td>
+      <td>{{contrat.dateFin}}</td>
+      <td>{{contrat.nbHeureSem}}</td>
+      <td>{{contrat.echelon}}</td>
+  </tbody>
+</table>

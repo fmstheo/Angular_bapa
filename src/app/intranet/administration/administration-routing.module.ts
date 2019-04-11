@@ -5,7 +5,6 @@ import { ContratTravailComponent } from './contrat-travail/contrat-travail.compo
 import { AccueilAdminComponent } from './accueil-admin/accueil-admin.component';
 
 const routes: Routes = [
-  {path:"test", component: ContratTravailComponent},
   {
     path: '', component: AccueilAdminComponent,
     children: [

@@ -11,7 +11,7 @@ import { ContratTravailService } from './services/contrat-travail.service';
   declarations: [
     ContratTravailComponent, 
     GestionUtilisateurComponent, 
-    AccueilAdminComponent,
+    AccueilAdminComponent
   ],
   imports: [
     CommonModule,
