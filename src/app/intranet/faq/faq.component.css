@@ -1,3 +1,10 @@
+<<<<<<< HEAD
+=======
+section {
+    flex-direction: column;
+}
+
+>>>>>>> master
 article {
     display: flex;
     flex-direction: column;

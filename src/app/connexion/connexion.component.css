@@ -1,4 +1,5 @@
 section {
+<<<<<<< HEAD
     width: 400px;
     margin: 60px auto;
     padding: 40px;
@@ -53,4 +54,14 @@ input[type='text'] {
     font-style: oblique;
     font-size: 14px;
     text-align: center;
+=======
+    flex-direction: column;
+}
+
+form {
+    width: 400px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+>>>>>>> master
 }
