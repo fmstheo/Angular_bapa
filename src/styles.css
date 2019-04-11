@@ -19,3 +19,15 @@ form .ng-valid{
 form .ng-invalid{
     box-shadow: 2px 2px 4px tomato;
 }
+
+/* CSS TABLEAUX */
+table {
+  border-collapse: collapse;
+  width: 92%;
+  margin: auto;
+}
+table th,
+table td {
+  border: 1px solid black;
+  padding: 10px 6px;
+}

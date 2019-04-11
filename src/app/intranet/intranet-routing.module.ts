@@ -11,10 +11,10 @@ const routes: Routes = [
     children: [
       { path: '', component: DashboardComponent },
       { path: 'conges', component: CongesComponent },
-      { path: 'faq', component: FaqComponent }
+      { path: 'faq', component: FaqComponent },
+      { path: 'administration', loadChildren: './administration/administration.module#AdministrationModule' }
     ]
-  },
-  { path: 'administration', loadChildren: './administration/administration.module#AdministrationModule' },
+  }
 ];
 
 @NgModule({

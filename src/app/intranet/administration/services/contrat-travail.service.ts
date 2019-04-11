@@ -14,9 +14,9 @@ export class ContratTravailService {
   getCT(){
     this.CT.get<Array<ContratTravail>>('/assets/data/contrat_travail.json').subscribe(
       (data) => {
-        console.log('contrat-travail.service data: ', data);
+        // console.log('contrat-travail.service data: ', data);
         this.contratTravail = data;
-        console.log('contrat-travail.service : ', this.contratTravail);
+        // console.log('contrat-travail.service : ', this.contratTravail);
       }
     );
   }

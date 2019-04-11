@@ -1,8 +1,8 @@
 [{
     "idPersonnel": 0,
     "telP": "0558000000",
-    "nomP": "Fabrice",
-    "prenomP": "Bellavia",
+    "nomP": "Bellavia",
+    "prenomP": "Fabrice",
     "postePrincipalP": "Développeur",
     "loginP": "fb",
     "mdpP": "bf",
@@ -15,8 +15,8 @@
   {
     "idPersonnel": 1,
     "telP": "0558111111",
-    "nomP": "Manu",
-    "prenomP": "Lefevre",
+    "nomP": "Lefevre",
+    "prenomP": "Manu",
     "postePrincipalP": "Développeur",
     "loginP": "ml",
     "mdpP": "lm",

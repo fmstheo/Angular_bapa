@@ -9,10 +9,11 @@ import { ContratTravailService } from '../services/contrat-travail.service';
 export class ContratTravailComponent implements OnInit {
 
   constructor(public contrat:ContratTravailService) {
-    console.log('plop',this.contrat.contratTravail);
+    
   }
 
   ngOnInit() {
+
   }
 
 }

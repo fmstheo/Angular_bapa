@@ -1,3 +1,33 @@
-<p>
-  gestion-utilisateur works!
-</p>
+<h2>Tableau des employés :</h2>
+<table>
+  <thead>
+    <tr>
+      <th>Id Employé</th>
+      <th>Téléphone</th>
+      <th>Nom employé</th>
+      <th>Prénom Employé</th>
+      <th>Poste</th>
+      <th>Login de connexion</th>
+      <th>Id service</th>
+      <th>Email</th>
+      <th>Matricule</th>
+      <th>Id Manager</th>
+      <th>Activation compte</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr></tr>
+    <tr *ngFor="let personnel of personnel.personnelS">
+      <td>{{personnel.idPersonnel}}</td>
+      <td>{{personnel.telP}}</td>
+      <td><a [routerLink]="">{{personnel.nomP}}</a></td>
+      <td>{{personnel.prenomP}}</td>
+      <td>{{personnel.postePrincipalP}}</td>
+      <td>{{personnel.loginP}}</td>
+      <td>{{personnel.idService}}</td>
+      <td>{{personnel.email}}</td>
+      <td>{{personnel.matricule}}</td>
+      <td>{{personnel.idManager}}</td>
+      <td>{{personnel.actif}}</td>
+  </tbody>
+</table>
