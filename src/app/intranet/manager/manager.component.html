@@ -30,8 +30,8 @@
     <fieldset>
       <Legend>Nouvelle absence</Legend>
       <label>Nom</label><br />
-      <select>
-        <option>Nom</option>
+      <select (change)="selectNom($event.target.value)" name="nom">
+        <option let f of ManagerService>Nom</option>
         <option>Bellavia</option>
         <option>Beras</option>
         <option>Clave</option>
