@@ -20,7 +20,7 @@
     <tr *ngFor="let personnel of personnel.personnelS">
       <td>{{personnel.idPersonnel}}</td>
       <td>{{personnel.telP}}</td>
-      <td><a [routerLink]="">{{personnel.nomP}}</a></td>
+      <td><a href [routerLink]="['/intranet/administration', personnel.idPersonnel]">{{personnel.nomP}}</a></td>
       <td>{{personnel.prenomP}}</td>
       <td>{{personnel.postePrincipalP}}</td>
       <td>{{personnel.loginP}}</td>
@@ -29,5 +29,6 @@
       <td>{{personnel.matricule}}</td>
       <td>{{personnel.idManager}}</td>
       <td>{{personnel.actif}}</td>
+
   </tbody>
 </table>

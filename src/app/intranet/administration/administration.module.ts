@@ -6,12 +6,13 @@ import { ContratTravailComponent } from './contrat-travail/contrat-travail.compo
 import { GestionUtilisateurComponent } from './gestion-utilisateur/gestion-utilisateur.component';
 import { AccueilAdminComponent } from './accueil-admin/accueil-admin.component';
 import { ContratTravailService } from './services/contrat-travail.service';
+import { EmployeComponent } from './gestion-utilisateur/employe/employe.component';
 
 @NgModule({
   declarations: [
     ContratTravailComponent, 
     GestionUtilisateurComponent, 
-    AccueilAdminComponent
+    AccueilAdminComponent, EmployeComponent, 
   ],
   imports: [
     CommonModule,

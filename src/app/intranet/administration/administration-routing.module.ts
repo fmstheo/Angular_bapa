@@ -2,7 +2,7 @@ import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
 import { GestionUtilisateurComponent } from './gestion-utilisateur/gestion-utilisateur.component'
 import { ContratTravailComponent } from './contrat-travail/contrat-travail.component';
-import { AccueilAdminComponent } from './accueil-admin/accueil-admin.component';
+import { EmployeComponent } from './gestion-utilisateur/employe/employe.component';
 
 const routes: Routes = [
   // {
@@ -13,6 +13,7 @@ const routes: Routes = [
   //   ]
   // },
   { path: '', component: GestionUtilisateurComponent },
+  { path: '/:idEmploye', component: EmployeComponent },
   { path: 'contrat-travail', component: ContratTravailComponent }
 ];
 
