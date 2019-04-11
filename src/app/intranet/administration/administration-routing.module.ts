@@ -3,6 +3,7 @@ import { Routes, RouterModule } from '@angular/router';
 import { GestionUtilisateurComponent } from './gestion-utilisateur/gestion-utilisateur.component'
 import { ContratTravailComponent } from './contrat-travail/contrat-travail.component';
 import { EmployeComponent } from './gestion-utilisateur/employe/employe.component';
+import { AdminGuard } from '../../services/admin.guard';
 
 const routes: Routes = [
   // {
@@ -14,7 +15,7 @@ const routes: Routes = [
   // },
   { path: '', component: GestionUtilisateurComponent },
   { path: '/:idEmploye', component: EmployeComponent },
-  { path: 'contrat-travail', component: ContratTravailComponent }
+  { path: 'contrat-travail', component: ContratTravailComponent, canActivate:[AdminGuard] }
 ];
 
 @NgModule({

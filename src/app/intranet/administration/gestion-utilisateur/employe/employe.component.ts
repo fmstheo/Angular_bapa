@@ -1,4 +1,7 @@
 import { Component, OnInit } from '@angular/core';
+import { ActivatedRoute } from '@angular/router';
+import { PersonnelService } from 'src/app/intranet/services/personnel.service';
+
 
 @Component({
   selector: 'app-employe',
@@ -7,9 +10,15 @@ import { Component, OnInit } from '@angular/core';
 })
 export class EmployeComponent implements OnInit {
 
-  constructor() { }
+  idEmploye: number;
+  constructor(private maRoute: ActivatedRoute, public personnel: PersonnelService) { }
 
   ngOnInit() {
+    this.maRoute.params.subscribe(
+      idEmploye => {
+        this.idEmploye = idEmploye['idEmploye'];
+        console.log('idEmployé :',idEmploye['idEmploye']);
+      });
   }
 
 }
