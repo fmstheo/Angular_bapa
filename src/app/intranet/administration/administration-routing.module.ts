@@ -9,7 +9,6 @@ import { SecuriteComponent } from './securite/securite.component';
 const routes: Routes = [
   {path:"", component:AdministrationComponent,
   children: [
-    
       {path:'bapa', component:BapaComponent},
       {path:'contrat-de-travail', component:ContratdetravailComponent},
       {path:'gestion-utilisateur', component:GestionutilisateurComponent},
