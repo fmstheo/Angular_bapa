@@ -9,6 +9,7 @@ import { FooterComponent } from './footer/footer.component';
 import { FaqComponent } from './faq/faq.component';
 import { DashboardComponent } from './dashboard/dashboard.component';
 import { FaqService } from './services/faq.service';
+import { FaqDetailComponent } from './faq/faq-detail/faq-detail.component';
 
 @NgModule({
   declarations: [
@@ -16,7 +17,8 @@ import { FaqService } from './services/faq.service';
     MenuComponent,
     FooterComponent,
     FaqComponent,
-    DashboardComponent],
+    DashboardComponent,
+    FaqDetailComponent],
   imports: [
     CommonModule,
     FormsModule,
