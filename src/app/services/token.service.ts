@@ -6,6 +6,7 @@ import { Injectable } from '@angular/core';
 export class TokenService {
 
   token:string="FMS SANS GREG";
+  admin:number=2;
   
   constructor() { }
 }

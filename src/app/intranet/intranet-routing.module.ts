@@ -4,12 +4,13 @@ import { AccueilComponent } from './accueil/accueil.component';
 import { FaqComponent } from './faq/faq.component';
 import { DashboardComponent } from './dashboard/dashboard.component';
 import { FaqDetailComponent } from './faq/faq-detail/faq-detail.component';
+import { AdminGuard } from '../services/admin.guard';
 
 const routes: Routes = [
   {path:'', component:AccueilComponent, 
     children:[
       {path:'', component:DashboardComponent},
-      {path:'faq', component:FaqComponent},
+      {path:'faq', component:FaqComponent, canActivate:[AdminGuard]},
       {path:'faq/:bertrand', component:FaqDetailComponent}
     ]
   }
