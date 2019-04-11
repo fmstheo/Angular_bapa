@@ -5,7 +5,7 @@ import { Injectable } from '@angular/core';
 })
 export class TokenService {
 
-  token:string;
+  token:string="FMS SANS GREG";
   
   constructor() { }
 }
