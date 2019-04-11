@@ -4,12 +4,14 @@ import { AccueilComponent } from './accueil/accueil.component';
 import { FaqComponent } from './faq/faq.component';
 import { DashboardComponent } from './dashboard/dashboard.component';
 import { FaqDetailComponent } from './faq/faq-detail/faq-detail.component';
+import { ManagerComponent } from './manager/manager.component';
 
 const routes: Routes = [
   {path:'', component:AccueilComponent, 
     children:[
       {path:'', component:DashboardComponent},
       {path:'faq', component:FaqComponent},
+      {path:'manager', component:ManagerComponent},
       {path:'faq/:bertrand', component:FaqDetailComponent}
     ]
   }
