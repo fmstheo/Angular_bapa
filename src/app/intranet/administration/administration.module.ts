@@ -6,9 +6,10 @@ import { GestionutilisateurComponent } from './gestionutilisateur/gestionutilisa
 import { BapaComponent } from './bapa/bapa.component';
 import { ContratdetravailComponent } from './contratdetravail/contratdetravail.component';
 import { SecuriteComponent } from './securite/securite.component';
+import { AdministrationComponent } from './administration/administration.component';
 
 @NgModule({
-  declarations: [GestionutilisateurComponent, BapaComponent, ContratdetravailComponent, SecuriteComponent],
+  declarations: [GestionutilisateurComponent, BapaComponent, ContratdetravailComponent, SecuriteComponent, AdministrationComponent],
   imports: [
     CommonModule,
     AdministrationRoutingModule
