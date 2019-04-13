@@ -1,3 +1,23 @@
-<p>
-  consult-conges works!
-</p>
+<table>
+  <tr>
+    <th>Date de début d'abscence</th>
+    <th>Date de fin d'abscence</th>
+    <th>Motif d'abscence</th>
+    <th>Statut</th>
+  </tr>  
+        <!-- Parcours du tableau conges-->
+    <tr *ngFor="let conges of consultation_demande.consultation_conges">
+      <td>{{conges.dateDebutConges}}</td>
+      <td>{{conges.dateFinConges}}</td>
+      <td>{{conges.MotifConges}}</td>
+      <td>{{conges.Statut}}</td></tr>
+    
+  
+
+
+
+
+
+
+</table>
+

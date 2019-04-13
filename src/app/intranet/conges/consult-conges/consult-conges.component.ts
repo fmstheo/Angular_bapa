@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { ConsultationCongesService } from '../../services/consultation-conges.service';
 
 @Component({
   selector: 'app-consult-conges',
@@ -7,9 +8,12 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ConsultCongesComponent implements OnInit {
 
-  constructor() { }
+
+  //pointage sur le service ConsultationCongesService
+  constructor(public consultation_demande:ConsultationCongesService) { }
 
   ngOnInit() {
+    this.consultation_demande.consultation_conges;
   }
-
+  
 }
