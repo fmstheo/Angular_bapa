@@ -47,6 +47,10 @@
         "tslint": "~5.11.0",
         "typescript": "~3.1.1"
     }
+<<<<<<< HEAD
+=======
+}
+>>>>>>> c3d9bc099fa926ab8b0185bae805ef1f949ee0d5
 =======
   "name": "ngbapa",
   "version": "0.0.0",
@@ -71,12 +75,19 @@
     "@angular/router": "~7.0.0",
     "core-js": "^2.5.4",
     "rxjs": "~6.3.3",
+<<<<<<< HEAD
     "tslib": "^1.9.0",
+=======
+>>>>>>> c3d9bc099fa926ab8b0185bae805ef1f949ee0d5
     "zone.js": "~0.8.26"
   },
   "devDependencies": {
     "@angular-devkit/build-angular": "^0.13.8",
+<<<<<<< HEAD
     "@angular/cli": "~7.3.8",
+=======
+    "@angular/cli": "~7.0.4",
+>>>>>>> c3d9bc099fa926ab8b0185bae805ef1f949ee0d5
     "@angular/compiler-cli": "^7.2.12",
     "@angular/language-service": "~7.0.0",
     "@types/jasmine": "~2.8.8",
@@ -95,5 +106,10 @@
     "tslint": "~5.11.0",
     "typescript": "~3.1.1"
   }
+<<<<<<< HEAD
 >>>>>>> 34d97abfd1a0a58a1a968978ab430c67722f43d8
 }
+=======
+}
+>>>>>>> 51ea8e5226f8b3721c67204c2ca0ecae8a8994ce
+>>>>>>> c3d9bc099fa926ab8b0185bae805ef1f949ee0d5

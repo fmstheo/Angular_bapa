@@ -10,7 +10,10 @@
             <a href routerLink="/intranet/com">Espace communication</a>
         </li>
         <li>
-            <a href routerLink="/intranet/manager">Accès manager</a>
+            <a (click)="setAccesManager()" class="manager">Accès manager</a>
+            <br>
+            <a *ngIf="AccesManager" class="sousMenu" href routerLink="/intranet/manager">Reporting absence</a>
+            <a *ngIf="AccesManager" class="sousMenu2">Débloquage utilisateur</a>
         </li>
         <li>
             <a href routerLink="/intranet/admin">Administration</a>

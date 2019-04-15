@@ -22,4 +22,8 @@ describe('ManagerComponent', () => {
   it('should create', () => {
     expect(component).toBeTruthy();
   });
+<<<<<<< HEAD
 });
+=======
+});
+>>>>>>> c3d9bc099fa926ab8b0185bae805ef1f949ee0d5

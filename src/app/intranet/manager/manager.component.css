@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 
 
 table, tr{
@@ -10,3 +11,15 @@ form {
 margin-left: 15%;
 margin-top: 5%;
 }
+=======
+table, tr{
+    border: 1px solid #ffffff;
+    margin-top: 5%;
+    text-align: center;
+  }
+  
+  form {
+  margin-left: 15%;
+  margin-top: 5%;
+  }  
+>>>>>>> c3d9bc099fa926ab8b0185bae805ef1f949ee0d5

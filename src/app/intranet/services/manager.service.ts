@@ -18,4 +18,8 @@ export class ManagerService {
       data => console.log(data)
     );
   }
+<<<<<<< HEAD
 }
+=======
+}
+>>>>>>> c3d9bc099fa926ab8b0185bae805ef1f949ee0d5
