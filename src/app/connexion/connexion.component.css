@@ -8,3 +8,19 @@ form {
     display: flex;
     flex-direction: column;
 }
+input{
+  width: 400px;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+}
+button{
+  width: 400px;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+}
+
+h1{
+  text-align: center;
+}

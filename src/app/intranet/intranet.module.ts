@@ -11,6 +11,8 @@ import { DashboardComponent } from './dashboard/dashboard.component';
 import { FaqService } from './services/faq.service';
 import { FaqDetailComponent } from './faq/faq-detail/faq-detail.component';
 import { ManagerComponent } from './manager/manager.component';
+import { AdministrationComponent } from './administration/administration.component';
+import { EspaceComponent } from './espace/espace.component';
 
 @NgModule({
   declarations: [
@@ -20,7 +22,9 @@ import { ManagerComponent } from './manager/manager.component';
     FaqComponent,
     DashboardComponent,
     FaqDetailComponent,
-    ManagerComponent],
+    ManagerComponent,
+    AdministrationComponent,
+    EspaceComponent],
   imports: [
     CommonModule,
     FormsModule,
