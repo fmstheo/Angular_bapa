@@ -1,0 +1,185 @@
+<section>
+
+<<<<<<< HEAD
+  <h1>Gestion des Absences</h1>
+
+  <table>
+    <tr>
+      <td>Nom</td>
+      <td>Prénom</td>
+      <td>Matricule</td>
+      <td>Type d'absence</td>
+      <td>Date de début abs</td>
+      <td>Date de fin abs</td>
+      <td>Status</td>
+      <!--cette case sera coloré rouge pour "refuser", orange pour " en attente", et vert pour " valider"-->
+      <td>Action</td>
+    </tr>
+    <tr>
+      <td>Exemple</td>
+      <td>Exemple</td>
+      <td>Exemple</td>
+      <td>Exemple</td>
+      <td>Exemple</td>
+      <td>Exemple</td>
+      <td>Exemple</td>
+      <td>Crud</td>
+    </tr>
+  </table>
+
+  <form>
+    <fieldset>
+      <Legend>Nouvelle absence</Legend>
+      <label>Nom</label><br />
+      <select (change)="selectNom($event.target.value)" name="nom">
+        <option let f of ManagerService>Nom</option>
+        <option>Bellavia</option>
+        <option>Beras</option>
+        <option>Clave</option>
+        <option>Goni</option>
+        <option>Guillaumin</option>
+        <option>Lassalle</option>
+        <option>Lefevre</option>
+        <option>Quere</option>
+        <option>Parrot</option>
+        <option>Petrement</option>
+      </select><br />
+
+      <label>Prénom</label><br />
+      <input/><br />
+
+      <label>Matricule</label><br />
+      <input /><br />
+
+      <label>Type d'absence</label><br />
+      <select>
+        <option></option>
+        <option>Congés payé</option>
+        <option>Congés sans solde</option>
+        <option>Naissance</option>
+        <option>Mariage d'un enfant</option>
+        <option>Mariage parents</option>
+        <option>Mariage du salarié</option>
+        <option>Décès du conjoint</option>
+        <option>décès d'un enfant</option>
+        <option>Décès d'un ascendant</option>
+        <option>Congès naissance</option>
+        <option>Congès maternité</option>
+        <option>Congès paternité</option>
+        <option>Congès parental</option>
+        <option>Congès présence parentale</option>
+        <option>Maladie</option>
+        <option>Autre</option>
+      </select><br />
+
+      <label>Date de début abs</label><br />
+      <input /><br />
+
+      <label>Date de fin abs</label><br />
+      <input /><br />
+
+      <label>Statut abs</label><br />
+      <select>
+        <option>Valider</option>
+        <option>Refusé</option>
+        <option>En attente</option>
+        <option>non justifié</option>
+      </select><br />
+      <input type="submit" value="Valider" /><br />
+
+    </fieldset>
+  </form>
+
+</section>
+=======
+    <h1>Gestion des Absences</h1>
+  
+    <table>
+      <tr>
+        <td>Nom</td>
+        <td>Prénom</td>
+        <td>Matricule</td>
+        <td>Type d'absence</td>
+        <td>Date de début abs</td>
+        <td>Date de fin abs</td>
+        <td>Status</td>
+        <!--cette case sera coloré rouge pour "refuser", orange pour " en attente", et vert pour " valider"-->
+        <td>Action</td>
+      </tr>
+      <tr>
+        <td>Exemple</td>
+        <td>Exemple</td>
+        <td>Exemple</td>
+        <td>Exemple</td>
+        <td>Exemple</td>
+        <td>Exemple</td>
+        <td>Exemple</td>
+        <td>Crud</td>
+      </tr>
+    </table>
+  
+    <form>
+      <fieldset>
+        <Legend>Nouvelle absence</Legend>
+        <label>Nom</label><br />
+        <select (change)="selectNom($event.target.value)" name="nom">
+          <option let f of ManagerService>Nom</option>
+          <option>Bellavia</option>
+          <option>Beras</option>
+          <option>Clave</option>
+          <option>Goni</option>
+          <option>Guillaumin</option>
+          <option>Lassalle</option>
+          <option>Lefevre</option>
+          <option>Quere</option>
+          <option>Parrot</option>
+          <option>Petrement</option>
+        </select><br />
+  
+        <label>Prénom</label><br />
+        <input/><br />
+  
+        <label>Matricule</label><br />
+        <input /><br />
+  
+        <label>Type d'absence</label><br />
+        <select>
+          <option></option>
+          <option>Congés payé</option>
+          <option>Congés sans solde</option>
+          <option>Naissance</option>
+          <option>Mariage d'un enfant</option>
+          <option>Mariage parents</option>
+          <option>Mariage du salarié</option>
+          <option>Décès du conjoint</option>
+          <option>décès d'un enfant</option>
+          <option>Décès d'un ascendant</option>
+          <option>Congès naissance</option>
+          <option>Congès maternité</option>
+          <option>Congès paternité</option>
+          <option>Congès parental</option>
+          <option>Congès présence parentale</option>
+          <option>Maladie</option>
+          <option>Autre</option>
+        </select><br />
+  
+        <label>Date de début abs</label><br />
+        <input /><br />
+  
+        <label>Date de fin abs</label><br />
+        <input /><br />
+  
+        <label>Statut abs</label><br />
+        <select>
+          <option>Valider</option>
+          <option>Refusé</option>
+          <option>En attente</option>
+          <option>non justifié</option>
+        </select><br />
+        <input type="submit" value="Valider" /><br />
+  
+      </fieldset>
+    </form>
+  
+  </section>
+>>>>>>> c3d9bc099fa926ab8b0185bae805ef1f949ee0d5
