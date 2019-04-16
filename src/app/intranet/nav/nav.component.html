@@ -1,11 +1,15 @@
 <nav>
   <ul>
-    <li><a href routerLink="/intranet" class="active">Dashboard</a></li>
-    <li><a href routerLink="/intranet/conges">Congés</a></li>
-    <li><a href routerLink="/intranet/com">Espace communication</a></li>
-    <li><a href routerLink="/intranet/manager">Accès manager</a></li>
-    <li><a href routerLink='/intranet/administration'>Administration</a></li>
-    <li><a href routerLink='/intranet/administration/contrat-travail'>Admin - Contrat </a></li>
-    <li><a href routerLink='/intranet/faq'>Questions fréquentes</a></li>
+    <li><a href routerLink="/intranet" routerLinkActive="active">Dashboard</a></li>
+    <li><a href routerLink="/intranet/conges" routerLinkActive="active">Congés</a></li>
+    <li><a href routerLink="/intranet/com" routerLinkActive="active">Espace communication</a></li>
+    <li><a href routerLink="/intranet/manager" routerLinkActive="active">Accès manager</a></li>
+
+    <ng-template [ngIf]="token.hLevel == 3">
+      <li><a href routerLink='/intranet/administration' routerLinkActive="active">Gestion utilisateur</a></li>
+      <li><a href routerLink='/intranet/administration/contrat-travail' routerLinkActive="active">Contrat de travail</a></li>
+    </ng-template>
+
+    <li><a href routerLink='/intranet/faq' routerLinkActive="active">Questions fréquentes</a></li>
   </ul>
 </nav>

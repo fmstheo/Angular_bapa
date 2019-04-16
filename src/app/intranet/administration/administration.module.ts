@@ -17,6 +17,7 @@ import { EmployeComponent } from './gestion-utilisateur/employe/employe.componen
   ],
   imports: [
     CommonModule,
+    FormsModule,
     AdministrationRoutingModule
   ],
   providers:[

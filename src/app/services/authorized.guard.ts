@@ -6,15 +6,15 @@ import { TokenService } from './token.service';
 @Injectable({
   providedIn: 'root'
 })
-export class AdminGuard implements CanActivate {
-  constructor(private token: TokenService) {
+export class AuthorizedGuard implements CanActivate {
 
-  }
+  constructor(private token: TokenService){}
+
   canActivate(
     next: ActivatedRouteSnapshot,
     state: RouterStateSnapshot): Observable<boolean> | Promise<boolean> | boolean {
-    //rajout d'un test sur une variable dans ToeknService
-    if (this.token.admin > 1) {
+    //rajout d'un test sur une variable dans TokenService
+    if (this.token.hLevel >= 1) {
       return true;
     }
     return false;
@@ -23,8 +23,8 @@ export class AdminGuard implements CanActivate {
   canLoad(
     next: ActivatedRouteSnapshot,
     state: RouterStateSnapshot): Observable<boolean> | Promise<boolean> | boolean {
-    //rajout d'un test sur une variable dans ToeknService
-    if (this.token.admin > 1) {
+    //rajout d'un test sur une variable dans TokenService
+    if (this.token.hLevel >= 1) {
       return true;
     }
     return false;

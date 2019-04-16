@@ -5,7 +5,7 @@ import { Injectable } from '@angular/core';
 })
 export class TokenService {
   token: string;
-  admin: number = 2;
+  hLevel: number = 3;
 
   constructor() { }
 }

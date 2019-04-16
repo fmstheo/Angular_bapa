@@ -4,6 +4,7 @@ import { AccueilComponent } from './accueil/accueil.component';
 import { CongesComponent } from './conges/conges.component';
 import { DashboardComponent } from './dashboard/dashboard.component';
 import { FaqComponent } from './faq/faq.component';
+import { AdministrationGuard } from '../services/administration.guard';
 
 const routes: Routes = [
   {
@@ -12,7 +13,7 @@ const routes: Routes = [
       { path: '', component: DashboardComponent },
       { path: 'conges', component: CongesComponent },
       { path: 'faq', component: FaqComponent },
-      { path: 'administration', loadChildren: './administration/administration.module#AdministrationModule' }
+      { path: 'administration', canLoad:[AdministrationGuard], loadChildren: './administration/administration.module#AdministrationModule' }
     ]
   }
 ];
