@@ -24,7 +24,7 @@ export class ConnexionComponent implements OnInit {
     this.authentification.setConnecte();
     console.log('On a soumis le formulaire avec pseudo : ', this.identifiants.id, ' et mdp :', this.identifiants.mdp);
     console.log('variable local form1 : ', f);
-    
+
   }
 
 }

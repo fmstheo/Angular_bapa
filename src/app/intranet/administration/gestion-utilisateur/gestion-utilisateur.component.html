@@ -16,7 +16,8 @@
     </tr>
   </thead>
   <tbody *ngFor="let personnel of personnel.personnelS">
-    <tr (click)="onModifier(personnel.idPersonnel)" class="info">
+    <!-- <tr (click)="onModifier(personnel.idPersonnel)" class="info"> -->
+    <tr (click)="onModifier()" class="info">
       <td>{{personnel.idPersonnel}}</td>
       <td>{{personnel.telP}}</td>
       <td><a href [routerLink]="['/intranet/administration', personnel.idPersonnel]">{{personnel.nomP}}</a></td>
@@ -29,7 +30,8 @@
       <td>{{personnel.idManager}}</td>
       <td>{{personnel.actif}}</td>
     </tr>
-    <tr *ngIf="idModif == personnel.idPersonnel">
+    <!-- <tr *ngIf="idModif == personnel.idPersonnel"> -->
+    <tr [@animInput]="modifiable ? 'open': 'close'">
       <td>{{personnel.idPersonnel}}</td>
       <td><input type="text" [(ngModel)]="personnel.telP"></td>
       <td><input type="text" [(ngModel)]="personnel.nomP"></td>
