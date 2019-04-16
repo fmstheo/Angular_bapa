@@ -14,6 +14,7 @@ const routes: Routes = [
   //   ]
   // },
   { path: '', component: GestionUtilisateurComponent },
+  // { path: '', redirectTo: 'users' },
   { path: 'contrat-travail', component: ContratTravailComponent, canActivate:[AdministrationGuard] },
   { path: ':idEmploye', component: EmployeComponent }
 ];

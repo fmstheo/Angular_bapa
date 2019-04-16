@@ -1,0 +1,11 @@
+.info{
+    cursor: pointer;
+}
+table input{
+    width: 80%;
+    text-align: center;
+}
+
+.inputTr{
+    display: none;
+}

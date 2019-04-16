@@ -7,6 +7,7 @@ import { PersonnelService } from '../../services/personnel.service';
   styleUrls: ['./gestion-utilisateur.component.css']
 })
 export class GestionUtilisateurComponent implements OnInit {
+  idModif = 58;
 
   constructor(public personnel:PersonnelService) {
     
@@ -14,5 +15,7 @@ export class GestionUtilisateurComponent implements OnInit {
 
   ngOnInit() {
   }
-
+onModifier(id){
+  this.idModif = id;
+}
 }

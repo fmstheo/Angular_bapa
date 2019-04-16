@@ -9,3 +9,7 @@ section {
   display: flex;
   justify-content: center;
 }
+img{
+  border-radius: 30px;
+  box-shadow: 2px 2px 8px black;
+}
