@@ -23,7 +23,63 @@
     "idService": 1,
     "email": "m@l.fr",
     "matricule": 11,
+    "idManager": 2,
+    "actif": 1
+  },
+  {
+    "idPersonnel": 2,
+    "telP": "0605040302",
+    "nomP": "Lassale",
+    "prenomP": "Franck",
+    "postePrincipalP": "Développeur",
+    "loginP": "lf",
+    "mdpP": "fl",
+    "idService": 1,
+    "email": "f@l.fr",
+    "matricule": 14,
+    "idManager": 3,
+    "actif": 1
+  },
+  {
+    "idPersonnel": 4,
+    "telP": "0559050856",
+    "nomP": "Goni",
+    "prenomP": "Didier",
+    "postePrincipalP": "Développeur",
+    "loginP": "dg",
+    "mdpP": "gd",
+    "idService": 1,
+    "email": "d@g.fr",
+    "matricule": 13,
     "idManager": 1,
+    "actif": 1
+  },
+  {
+    "idPersonnel": 5,
+    "telP": "0607080907",
+    "nomP": "Clave",
+    "prenomP": "Matthieu",
+    "postePrincipalP": "Développeur",
+    "loginP": "mc",
+    "mdpP": "cm",
+    "idService": 1,
+    "email": "m@c.fr",
+    "matricule": 15,
+    "idManager": 3,
+    "actif": 1
+  },
+  {
+    "idPersonnel": 6,
+    "telP": "0558967523",
+    "nomP": "Parrot",
+    "prenomP": "Bertrand",
+    "postePrincipalP": "Développeur",
+    "loginP": "bp",
+    "mdpP": "pb",
+    "idService": 1,
+    "email": "b@p.fr",
+    "matricule": 16,
+    "idManager": 2,
     "actif": 1
   }
 ]

@@ -9,3 +9,20 @@ table input{
 .inputTr{
     display: none;
 }
+
+ h2:hover + table thead{
+    color:red;
+}
+
+/* table tbody tr , table tbody tr td  {
+    height: 0;
+    font-size: 0;
+    margin:0;
+    max-height: 0;
+    line-height: 0;
+    border-bottom: 0;
+    border-top:0;
+} 
+table{
+    border: 1px solid black;
+} */
