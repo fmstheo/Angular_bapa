@@ -27,7 +27,7 @@ import { SecuriteIntercepteur } from './services/securite.intercepteur';
     AppRoutingModule,
     HttpClientModule
   ],
-  providers: [AuthService, TokenService, { provide: HTTP_INTERCEPTORS, useClass: AuthIntercepteur, multi: true }, { provide: HTTP_INTERCEPTORS, useClass: SecuriteIntercepteur, multi: true }],
+  providers: [AuthService, TokenService, /* { provide: HTTP_INTERCEPTORS, useClass: AuthIntercepteur, multi: true } , { provide: HTTP_INTERCEPTORS, useClass: SecuriteIntercepteur, multi: true }*/],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

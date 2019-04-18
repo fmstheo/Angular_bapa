@@ -29,7 +29,7 @@
   {
     "idPersonnel": 2,
     "telP": "0605040302",
-    "nomP": "Lassale",
+    "nomP": "Lassalle",
     "prenomP": "Franck",
     "postePrincipalP": "Développeur",
     "loginP": "lf",
@@ -38,6 +38,20 @@
     "email": "f@l.fr",
     "matricule": 14,
     "idManager": 3,
+    "actif": 1
+  },
+  {
+    "idPersonnel": 3,
+    "telP": "0658634512",
+    "nomP": "Querre",
+    "prenomP": "Sandra",
+    "postePrincipalP": "Développeur",
+    "loginP": "qs",
+    "mdpP": "sq",
+    "idService": 1,
+    "email": "f@l.fr",
+    "matricule": 18,
+    "idManager": 2,
     "actif": 1
   },
   {

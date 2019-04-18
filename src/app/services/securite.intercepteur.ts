@@ -6,12 +6,12 @@ import { TokenService } from './token.service';
 
 @Injectable()
 export class SecuriteIntercepteur implements HttpInterceptor {
-  
-  constructor(public securite:TokenService){}
+
+  constructor(public securite: TokenService) { }
 
   intercept(req: HttpRequest<any>, next: HttpHandler): Observable<HttpEvent<any>> {
     return next.handle(req)
-    .pipe(
+      .pipe(
         catchError((erreur) => {
           if (erreur instanceof HttpErrorResponse && erreur.status == 401) {
             this.securite.token = '';
@@ -19,6 +19,6 @@ export class SecuriteIntercepteur implements HttpInterceptor {
             console.log(erreur); // Récupérer les erreurs et les affichers
           }
           return Observable.throw(erreur); // Retourner l'erreur dans tous les cas
-      })) as any;
-    }
+        })) as any;
+  }
 }
