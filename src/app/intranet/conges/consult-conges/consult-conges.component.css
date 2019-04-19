@@ -1,6 +1,20 @@
 table,td,th {
     border:1px solid black;
+    
     border-collapse: collapse;
     width:500px;
-    margin:auto;
+    margin-top:200px;
+    margin-left:50px;
+    
+    
+    
+}
+td,th{
+    padding:15px;
+}
+th {
+    background-color:#eb623d;
+}
+.fas  {
+    margin-left:50%;
 }

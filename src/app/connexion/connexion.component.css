@@ -9,3 +9,6 @@ button {
     display:block;
     margin:auto;
 }
+section {
+    display:flex;
+}
