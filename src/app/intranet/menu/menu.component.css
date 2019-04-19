@@ -4,10 +4,14 @@ ul {
     padding: 0;
     overflow: hidden;
     background-color: #333;
+    text-align:center;
   }
   
   li {
     float: left;
+    margin:auto;
+    padding:0;
+    
   }
   
   li a {
@@ -22,3 +26,13 @@ ul {
   li a:hover {
     background-color: #111;
   }
+
+    nav ul li ul {
+    display:none;
+    }
+    nav ul li:hover ul {
+    display:block;
+    }
+   nav li:hover ul li {
+    float:none;
+    }

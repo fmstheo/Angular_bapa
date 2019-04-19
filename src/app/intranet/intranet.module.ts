@@ -6,9 +6,11 @@ import { AccueilComponent } from './accueil/accueil.component';
 import { MenuComponent } from './menu/menu.component';
 import { FooterComponent } from './footer/footer.component';
 import { AproposComponent } from './apropos/apropos.component';
+import { EspacecommunicationComponent } from './espacecommunication/espacecommunication.component';
+import { PhpComponent } from './espacecommunication/php/php.component';
 
 @NgModule({
-  declarations: [AccueilComponent, MenuComponent, FooterComponent, AproposComponent],
+  declarations: [AccueilComponent, MenuComponent, FooterComponent, AproposComponent, EspacecommunicationComponent, PhpComponent],
   imports: [
     CommonModule,
     IntranetRoutingModule
