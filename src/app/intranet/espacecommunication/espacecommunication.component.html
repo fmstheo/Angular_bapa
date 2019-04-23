@@ -1,17 +1,20 @@
-
-
 <section>
   <div class="vertical-menu">
-    <a href="#" class="active">Espace Communication</a>
-    <a href="/assets/datas/Bien_developper_pour_le_Web_2.0_.pdf" target="_blank">Bien développer pour le Web 2.0</a>
-    <a href="/assets/datas/Typescript.pdf" target="_blank">Typecript</a>
-    <a href="/assets/datas/Anglar.pdf" target="_blank">Anglar</a>
-    <a href="/assets/datas/PHP_MVC.pdf">PHP MVC</a>
+    <a href routerLink="./" class="active">Espace Communication</a>
+    <a href routerLink="/intranet/espace-communication/algo">ALGORITHMES</a>
+    <a href routerLink="/intranet/espace-communication/anglais">ANGLAIS</a>
+    <a href routerLink="/intranet/espace-communication/angular">ANGULAR</a>
+    <a href routerLink="/intranet/espace-communication/appache-cordova">APPACHE / CORDOVA</a>
+    <a href routerLink="/intranet/espace-communication/apprendre-a-apprendre">APPRENDRE A APPRENDRE</a>
+    <a href routerLink="/intranet/espace-communication/droits-informatique">DROITS INFORMATIQUE</a>
+    <a href routerLink="/intranet/espace-communication/gestion-de-projet">GESTION DE PROJET</a>
+    <a href routerLink="/intranet/espace-communication/html-css">HTML / CSS</a>
+    <a href routerLink="/intranet/espace-communication/php">PHP MVC</a>
   </div>
-  <div >
-    tutu
-  </div>
+
+ 
+    <router-outlet></router-outlet>
+
   
 </section>
 <app-footer></app-footer>
-<router-outlet></router-outlet>
