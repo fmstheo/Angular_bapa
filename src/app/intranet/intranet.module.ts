@@ -16,9 +16,15 @@ import { ApprendreAapprendreComponent } from './espacecommunication/apprendre-aa
 import { HtmlCssComponent } from './espacecommunication/html-css/html-css.component';
 import { DroitsInformatiqueComponent } from './espacecommunication/droits-informatique/droits-informatique.component';
 import { GestionDeProjetComponent } from './espacecommunication/gestion-de-projet/gestion-de-projet.component';
+import { GitComponent } from './espacecommunication/git/git.component';
+import { JavaComponent } from './espacecommunication/java/java.component';
+import { JavaScriptComponent } from './espacecommunication/java-script/java-script.component';
+import { NodeJsComponent } from './espacecommunication/node-js/node-js.component';
+import { PrestashopComponent } from './espacecommunication/prestashop/prestashop.component';
+import { UmlComponent } from './espacecommunication/uml/uml.component';
 
 @NgModule({
-  declarations: [AccueilComponent, MenuComponent, FooterComponent, AproposComponent, EspacecommunicationComponent, PhpComponent, AlgoComponent, AnglaisComponent, AngularComponent, AppacheCordovaComponent, ApprendreAapprendreComponent, HtmlCssComponent, DroitsInformatiqueComponent, GestionDeProjetComponent],
+  declarations: [AccueilComponent, MenuComponent, FooterComponent, AproposComponent, EspacecommunicationComponent, PhpComponent, AlgoComponent, AnglaisComponent, AngularComponent, AppacheCordovaComponent, ApprendreAapprendreComponent, HtmlCssComponent, DroitsInformatiqueComponent, GestionDeProjetComponent, GitComponent, JavaComponent, JavaScriptComponent, NodeJsComponent, PrestashopComponent, UmlComponent],
   imports: [
     CommonModule,
     IntranetRoutingModule
