@@ -22,9 +22,10 @@ import { JavaScriptComponent } from './espacecommunication/java-script/java-scri
 import { NodeJsComponent } from './espacecommunication/node-js/node-js.component';
 import { PrestashopComponent } from './espacecommunication/prestashop/prestashop.component';
 import { UmlComponent } from './espacecommunication/uml/uml.component';
+import { IntranetComponent } from './intranet.component';
 
 @NgModule({
-  declarations: [AccueilComponent, MenuComponent, FooterComponent, AproposComponent, EspacecommunicationComponent, PhpComponent, AlgoComponent, AnglaisComponent, AngularComponent, AppacheCordovaComponent, ApprendreAapprendreComponent, HtmlCssComponent, DroitsInformatiqueComponent, GestionDeProjetComponent, GitComponent, JavaComponent, JavaScriptComponent, NodeJsComponent, PrestashopComponent, UmlComponent],
+  declarations: [AccueilComponent, MenuComponent, FooterComponent, AproposComponent, EspacecommunicationComponent, PhpComponent, AlgoComponent, AnglaisComponent, AngularComponent, AppacheCordovaComponent, ApprendreAapprendreComponent, HtmlCssComponent, DroitsInformatiqueComponent, GestionDeProjetComponent, GitComponent, JavaComponent, JavaScriptComponent, NodeJsComponent, PrestashopComponent, UmlComponent, IntranetComponent],
   imports: [
     CommonModule,
     IntranetRoutingModule

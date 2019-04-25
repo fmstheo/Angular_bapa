@@ -1,0 +1,12 @@
+[
+    { "nom": "Bertrand", "phrase": "STAGIARE GRETA", "niveau": "B", "equipe": "1", "img": "assets/images/didier.png" },
+    { "nom": "Gabriel", "phrase": "STAGIARE GRETA", "niveau": "B", "equipe": "2", "img": "assets/images/didier.png" },
+    { "nom": "Mathieu", "phrase": "STAGIARE GRETA", "niveau": "A", "equipe": "1", "img": "assets/images/didier.png" },
+    { "nom": "Théo", "phrase": "STAGIARE GRETA", "niveau": "A", "equipe": "2", "img": "assets/images/didier.png" },
+    { "nom": "Didier", "phrase": "STAGIARE GRETA", "niveau": "A", "equipe": "1", "img": "assets/images/didier.png" },
+    { "nom": "Franck", "phrase": "STAGIARE GRETA", "niveau": "A", "equipe": "2", "img": "assets/images/didier.png" },
+    { "nom": "Sandra", "phrase": "STAGIARE GRETA", "niveau": "B", "equipe": "1", "img": "assets/images/didier.png" },
+    { "nom": "Grégory", "phrase": "STAGIARE GRETA", "niveau": "B", "equipe": "2", "img": "assets/images/didier.png" },
+    { "nom": "Fabrice", "phrase": "STAGIARE GRETA", "niveau": "A", "equipe": "Delta", "img": "assets/images/didier.png" },
+    { "nom": "Emmanuel", "phrase": "STAGIARE GRETA", "niveau": "B", "equipe": "2", "img": "assets/images/didier.png" }
+]

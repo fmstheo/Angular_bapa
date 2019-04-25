@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { DevjuniorService } from 'src/app/services/devjunior.service';
 
 @Component({
   selector: 'app-gestionutilisateur',
@@ -7,7 +8,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class GestionutilisateurComponent implements OnInit {
 
-  constructor() { }
+  constructor(public data:DevjuniorService) { }
 
   ngOnInit() {
   }

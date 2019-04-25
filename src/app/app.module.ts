@@ -9,6 +9,8 @@ import { ConnexionComponent } from './connexion/connexion.component';
 import { Erreur404Component } from './erreur404/erreur404.component';
 import { AuthService } from './services/auth.service';
 import { TokenService } from './services/token.service';
+import { DevjuniorService } from './services/devjunior.service';
+import { DevemployeService } from './services/devemploye.service';
 
 
 
@@ -24,7 +26,7 @@ import { TokenService } from './services/token.service';
     AppRoutingModule,
     HttpClientModule
   ],
-  providers: [AuthService, TokenService],
+  providers: [AuthService, TokenService, DevjuniorService, DevemployeService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

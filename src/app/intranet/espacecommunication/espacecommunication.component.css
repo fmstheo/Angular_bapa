@@ -10,7 +10,7 @@ section{
     display:flex;
     flex-flow: wrap;
     border-radius: 5px;
-    width: 80%;
+    width: 95%;
     margin: 1px auto  ;
     padding: 1%;
     background-color: rgb(233, 243, 255);
@@ -18,12 +18,13 @@ section{
     
 }
 
+
 article{
     text-align: center;
  
     /* box-shadow:  */
     border-radius: 5px;
-    /* width: 80%; */
+    width: 95%;
     margin: 20px auto  ;
     padding: 1%;
     background-color: rgb(233, 243, 255);
@@ -49,4 +50,6 @@ article{
     background-color: #3e444c;
     color: white;
   }
+
+
 

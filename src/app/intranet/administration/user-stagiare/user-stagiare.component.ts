@@ -2,11 +2,11 @@ import { Component, OnInit } from '@angular/core';
 import { DevjuniorService } from 'src/app/services/devjunior.service';
 
 @Component({
-  selector: 'app-contratdetravail',
-  templateUrl: './contratdetravail.component.html',
-  styleUrls: ['./contratdetravail.component.css']
+  selector: 'app-user-stagiare',
+  templateUrl: './user-stagiare.component.html',
+  styleUrls: ['./user-stagiare.component.css']
 })
-export class ContratdetravailComponent implements OnInit {
+export class UserStagiareComponent implements OnInit {
 
   constructor(public data:DevjuniorService) { }
 

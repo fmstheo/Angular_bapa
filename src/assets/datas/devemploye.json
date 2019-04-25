@@ -1,0 +1,21 @@
+[
+    { "nom": "Alexandre", "phrase": "DEV FULL-STACK", "niveau": "B", "tuteurde": "Théo", "equipe": "2", "img": "assets/images/didier.png" },
+    { "nom": "Eli", "phrase": "DEV FULL-STACK", "niveau": "B", "tuteurde": "Emmanuel", "equipe": "2", "img": "assets/images/didier.png" },
+    { "nom": "Gautier", "phrase": "CHEF DE PROJET", "niveau": "B", "tuteurde": "All", "equipe": "1","img": "assets/images/didier.png" },
+    { "nom": "Jean-marc", "phrase": "CHEF DE PROJET", "niveau": "B","tuteurde": "All", "equipe": "2", "img": "assets/images/didier.png" },
+    { "nom": "José", "phrase": "DEV FULL-STACK", "niveau": "A", "tuteurde": "Sandra", "equipe": "1", "img": "assets/images/didier.png" },
+    { "nom": "Marie-pierre", "phrase": "BETA-TESTEUSE", "niveau": "B", "tuteurde": "--", "equipe": "--","img": "assets/images/didier.png" },
+    { "nom": "Matthieu", "phrase": "DEV FULL-STACK", "niveau": "B", "tuteurde": "Didier", "equipe": "1", "img": "assets/images/didier.png" },
+    { "nom": "Pierre", "phrase": "DEV FULL-STACK", "niveau": "B", "tuteurde": "Bertrand", "equipe": "1", "img": "assets/images/didier.png" },
+    { "nom": "Rudy", "phrase": "DEV FULL-STACK", "niveau": "B", "tuteurde": "Grégory", "equipe": "2", "img": "assets/images/didier.png" },
+    { "nom": "Tom", "phrase": "DEV FULL-STACK", "niveau": "B", "tuteurde": "Mathieu", "equipe": "1", "img": "assets/images/didier.png" }
+]
+
+
+
+
+
+
+
+
+

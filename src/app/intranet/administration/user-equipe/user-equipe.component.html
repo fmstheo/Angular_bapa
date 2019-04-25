@@ -1,0 +1,34 @@
+<section>
+    <h2>Liste des équipes developpeur du pôle de DAX</h2>
+  
+    <!-- <article *ngFor="let etu of data.devjunior">
+      <h3>{{ etu.nom }}</h3>
+      <p>{{ etu.phrase }}</p> -->
+    <!-- <img [src]="etu.img"> -->
+    <!-- </article> -->
+  
+    <table>
+      <tr>
+        <th>Nom</th>
+        <th>Statut</th>
+        <th>Niveau d'anglais</th>
+        <th>Equipe</th>
+      </tr>
+      <tr *ngFor="let user of dataemploye.devemploye of datajunior.devjunior">
+        <td>{{ user.nom }}</td>
+        <td>{{ user.phrase }}</td>
+        <td>{{ user.niveau }}</td>
+        <td>{{ user.equipe}}</td>
+      </tr>
+      <tr *ngFor="let user of datajunior.devjunior">
+          <td>{{ user.nom }}</td>
+          <td>{{ user.phrase }}</td>
+          <td>{{ user.niveau }}</td>
+          <td>{{ user.equipe}}</td>
+        </tr>
+    </table>
+    <p>
+      * Différent niveaux d'anglais : A : Utilisateur élémentaire | B : Utilisateur indépendant | C : Utilisateur expérimenté
+    </p>
+  
+  </section>

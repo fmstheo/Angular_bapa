@@ -39,3 +39,22 @@ form input.ng-valid{
 form input.ng-invalid{
     border: 3px solid red;
 }
+
+table {
+    border-collapse: collapse;
+    width: 100%;
+  }
+  
+  th, td {
+    text-align: center;
+    padding: 8px;
+  }
+  
+  tr:nth-child(even){
+    background-color: #d7fabf
+}
+  
+  th {
+    background-color: #4CAF50;
+    color: white;
+  }
