@@ -1,29 +1,38 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { FormsModule } from '@angular/forms';
 
-import { AccueilComponent } from './accueil/accueil.component';
-import { MenuComponent } from './menu/menu.component';
 import { IntranetRoutingModule } from './intranet-routing.module';
+import { AccueilComponent } from './accueil/accueil.component';
+import { AproposComponent } from './apropos/apropos.component';
+import { MenuComponent } from './menu/menu.component';
 import { FooterComponent } from './footer/footer.component';
-import { FaqComponent } from './faq/faq.component';
-import { DashboardComponent } from './dashboard/dashboard.component';
-import { FaqService } from './services/faq.service';
-import { FaqDetailComponent } from './faq/faq-detail/faq-detail.component';
+import { MonEspaceComponent } from './mon-espace/mon-espace.component';
+import { CovoiturageComponent } from './covoiturage/covoiturage.component';
+import { GuideUtilisateurComponent } from './guide-utilisateur/guide-utilisateur.component';
+import { CommunicationComponent } from './communication/communication.component';
+import { ManagerComponent } from './manager/manager.component';
+import { AdministrationComponent } from './administration/administration.component';
+import { MessageComponent } from './message/message.component';
+import { ChatService } from './services/chat.service';
+
 
 @NgModule({
   declarations: [
     AccueilComponent,
+    AproposComponent,
     MenuComponent,
     FooterComponent,
-    FaqComponent,
-    DashboardComponent,
-    FaqDetailComponent],
+    MonEspaceComponent,
+    CovoiturageComponent,
+    GuideUtilisateurComponent,
+    CommunicationComponent,
+    ManagerComponent,
+    AdministrationComponent,
+    MessageComponent],
   imports: [
     CommonModule,
-    FormsModule,
     IntranetRoutingModule
   ],
-  providers: [FaqService]
+  providers:[ChatService]
 })
 export class IntranetModule { }

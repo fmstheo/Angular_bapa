@@ -1,27 +1,31 @@
-<section>
-    <form *ngIf="!authentification.connecte" (ngSubmit)="envoieID(monFormulaire)" #monFormulaire="ngForm">
-        <label for="id">Saisissez un pseudo</label>
+<div class="Page-log">
+  <form>
+        <h1 class="titre-form"><img class="logo-form" alt="bapa web" src="assets/image/mystock.png">BAPA WEB</h1>
+    
+    <p><label>utilisisateur</label></p>
+    <p><input name="identifiant" minlength="5" placeholder="Votre identifant" type="text"></p>
 
-        <input name="id" [(ngModel)]="identifiants.id" #idUser="ngModel" minlength="8" placeholder="Votre pseudo" type="text" required (input)="getIdentifiants()">
-        <div *ngIf="idUser.control.invalid">Merci de saisir un pseudo de 8 caractères minimum</div>
-        <label for="id">Saisissez votre mot de passe</label>
+    <p><label>Mot de passe</label></p>
+    <p><input name="mdp" placeholder="Votre mot de passe" type="password"></p>
 
-        <input name="mdp" [(ngModel)]="identifiants.mdp" #mdpUser="ngModel" placeholder="Votre mot de passe" type="password" required>
-        <div *ngIf="mdpUser.control.invalid">Votre mot de passe doit contenir au moins 8 caractères</div>
-        <input type="submit" value="Se connecter">
-        <input type="reset" value="Annuler">
-
-    </form>
-    <p>
-        <button (click)="setMdpOublie()">Mot de passe oublié ?</button>
-    </p>
-    <div *ngIf="authentification.connecte">
-        <button (click)="authentification.setConnecte()">Se déconnecter</button>
-        <a href routerLink="/intranet">Aller sur l'Intranet</a>
+    <a href routerLink="/intranet/"><input type="submit" value="Se connecter"></a>
+    <p><a href routerLink="/intranet/a-propos">Intranet de la page appropos</a></p>
+    <p>Mot de passe oublier</p>
+  </form>
+</div>
+<footer>
+    <div class="pers-footer">
+        <h1>FMS</h1>
     </div>
-    <form *ngIf="mdpOublie">
-        <label for="oublieID">Saisissez une adresse mail</label>
-        <input name="oublieID" type="email" required placeholder="Saisissez votre identifiant ou votre email">
-        <input type="submit" value="Recevoir un email">
-    </form>
-</section>
+    <div class="pers-footer">
+        <h1>Création du site</h1>
+        <p>5 mars 2019</p>
+    </div>
+    <div class="pers-footer">
+        <h1>Tous droit réservé </h1>
+        <p>mosambic left</p>
+    </div>
+    <div class="pers-footer">
+        <h1>Mention légale</h1>
+    </div>
+  </footer>
