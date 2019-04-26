@@ -1,0 +1,12 @@
+[
+    {"img": "assets/image/stagiaire/stg-bertant.jpeg", "nom": "PARROT", "prenom": "BERTRAND", "statut": "en stage"},
+    {"img": "assets/image/stagiaire/stg-sandra.jpg", "nom": "QUERE", "prenom": "SANDRA", "statut": "en stage"},
+    {"img": "assets/image/stagiaire/stg-theo.jpg", "nom": "GUILLAUMIN", "prenom": "THEO", "statut": "en stage"},
+    {"img": "assets/image/stagiaire/stg-mathieu.png", "nom": "CLAVE", "prenom": "Mathieu", "statut": "en stage"},
+    {"img": "assets/image/stagiaire/stg-greg.jpg", "nom": "PETREMENT", "prenom": "GREGORY", "statut": "en stage"},
+    {"img": "assets/image/stagiaire/stg-FABRICE.jpg", "nom": "BELLAVIA ", "prenom": "FABRICE", "statut": "en stage"},
+    {"img": "assets/image/stagiaire/stg-gab.jpg", "nom": "BERAS", "prenom": "GABRIEL", "statut": "en stage"},
+    {"img": "assets/image/stagiaire/stg-didier.png", "nom": "GONI", "prenom": "DIDIER", "statut": "en stage"},
+    {"img": "assets/image/stagiaire/stg-manu.jpg", "nom": "LEFEVRE", "prenom": "EMMANUEL", "statut": "en stage"},
+    {"img": "assets/image/stagiaire/stg-FRANCK.png", "nom": "LASSALLE ", "prenom": "FRANCK", "statut": "en stage"}
+]

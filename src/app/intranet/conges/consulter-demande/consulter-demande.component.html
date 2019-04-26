@@ -1,0 +1,27 @@
+<section>
+  <h3>demande 11</h3>
+
+  <p *ngFor="let user of data.reprisechatjson">{{ user.nom }}</p>
+  <table>
+      <tr>
+        <th>Apparence</th>
+        <th>Nom</th>
+        <th>prenon</th>
+        <th>statut</th>
+      </tr>
+      <tr *ngFor="let user of data.reprisechatjson">
+         <!-- <img [src]="etu.img"> -->
+        <td>{{ user.nom }}</td>
+        <td><img [src]="user.img"></td>
+      </tr>
+      
+    </table>
+    <table>
+      <tr>
+        <th>nom</th>
+      </tr>
+      <tr *ngFor="let stag of datastagiaire.stagiairejson">
+       <td>{{ stag.nom }}</td>
+      </tr>
+    </table>
+</section>

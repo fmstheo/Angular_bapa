@@ -1,0 +1,19 @@
+img{
+    height: 100px;
+    margin: 0 0;
+}
+table{
+    width: 100%;
+    border: slategray 5px solid;
+    border-radius: 5px;
+}
+th{
+    background: #265a88;
+    color: white;
+    text-align: center;
+    border: black 2px solid;
+}
+td{
+    border: black 2px solid;
+    text-align: center;
+}

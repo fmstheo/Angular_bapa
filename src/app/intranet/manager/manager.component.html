@@ -1,0 +1,22 @@
+<section>
+    <h3>Zone non visible</h3>
+    <h4>Mais je suis nul donc on peut voir</h4>
+
+
+    <table>
+        <tr>
+            <th>Apparence</th>
+            <th>Nom</th>
+            <th>prenom</th>
+            <th>statut</th>
+        </tr>
+        <tr *ngFor="let StgGreta of data.StgGreta">
+           <!-- <img [src]="etu.img"> -->
+          <td><img [src]="StgGreta.img"></td>
+          <td>{{ StgGreta.nom }}</td>
+          <td>{{ StgGreta.prenom }}</td>
+          <td>{{ StgGreta.statut }}</td>
+        </tr>
+        
+      </table>
+</section>
