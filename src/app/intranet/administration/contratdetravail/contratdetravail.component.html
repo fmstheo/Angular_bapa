@@ -1,3 +1,30 @@
 <p>
   contratdetravail works!
 </p>
+
+<section>
+    <h2>Contrat de travail par employé</h2>
+  
+    <!-- <article *ngFor="let etu of data.devjunior">
+      <h3>{{ etu.nom }}</h3>
+      <p>{{ etu.phrase }}</p> -->
+    <!-- <img [src]="etu.img"> -->
+    <!-- </article> -->
+  
+    <table>
+      <tr>
+        <th>Nom</th>
+        <th>Statut</th>
+        <th>Contrat *</th>
+      </tr>
+      <tr *ngFor="let user of data.devemploye">
+        <td>{{ user.nom }}</td>
+        <td>{{ user.phrase }}</td>
+        <td><a href="{{ user.contrat}}" target="_blank">PDF</a></td>
+      </tr>
+    </table>
+    <p>
+      * Lien personnalisé
+    </p>
+  
+  </section>

@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { DevjuniorService } from 'src/app/services/devjunior.service';
+import { DevemployeService } from 'src/app/services/devemploye.service';
 
 @Component({
   selector: 'app-contratdetravail',
@@ -8,7 +8,7 @@ import { DevjuniorService } from 'src/app/services/devjunior.service';
 })
 export class ContratdetravailComponent implements OnInit {
 
-  constructor(public data:DevjuniorService) { }
+  constructor(public data:DevemployeService) { }
 
   ngOnInit() {
   }

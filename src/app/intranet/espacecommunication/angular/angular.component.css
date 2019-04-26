@@ -29,24 +29,3 @@ article{
     background-color: rgb(233, 243, 255);
     box-shadow: 2px 2px 12px rgb(0, 0, 0);
 }
-.vertical-menu {
-    width: 200px;
-  }
-  
-  .vertical-menu a {
-    background-color: #0795d6;
-    color:#ffffff;
-    display: block;
-    padding: 12px;
-    text-decoration: none;
-  }
-  
-  .vertical-menu a:hover {
-    background-color: rgb(0, 0, 0);
-  }
-  
-  .vertical-menu a.active {
-    background-color: #3e444c;
-    color: white;
-  }
-

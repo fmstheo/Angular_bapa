@@ -21,6 +21,7 @@ import { JavaScriptComponent } from './espacecommunication/java-script/java-scri
 import { NodeJsComponent } from './espacecommunication/node-js/node-js.component';
 import { PrestashopComponent } from './espacecommunication/prestashop/prestashop.component';
 import { UmlComponent } from './espacecommunication/uml/uml.component';
+import { AccueilEspacecommunicationComponent } from './espacecommunication/accueil-espacecommunication/accueil-espacecommunication.component';
 
 
 const routes: Routes = [
@@ -37,6 +38,8 @@ const routes: Routes = [
       {
         path: "espace-communication", component: EspacecommunicationComponent,
         children: [
+          { path: "", component:AccueilEspacecommunicationComponent},
+          { path: "accueil", component:AccueilEspacecommunicationComponent},
           { path: "php", component: PhpComponent },
           { path: "algo", component: AlgoComponent },
           { path: "anglais", component: AnglaisComponent },

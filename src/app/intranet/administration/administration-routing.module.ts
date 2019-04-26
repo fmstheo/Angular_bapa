@@ -13,6 +13,7 @@ const routes: Routes = [
   {
     path: "", component: AdministrationComponent,
     children: [
+      { path: '', component: BapaComponent },
       { path: 'bapa', component: BapaComponent },
       { path: 'contrat-de-travail', component: ContratdetravailComponent },
       {
