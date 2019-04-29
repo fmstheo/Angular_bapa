@@ -8,6 +8,6 @@ export interface ContratTravail {
     dateDeb: string;
     dateFin?: string;
     nbHeureSem: string;
-    echelon?: string;
+    echelon?: number;
 
 }

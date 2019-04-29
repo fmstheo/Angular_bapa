@@ -1,4 +1,5 @@
 <h2>Tableau des contrats de travail :</h2>
+<button (click)="onSave()">Enregistrer</button>
 <table>
   <thead>
     <tr>
@@ -16,7 +17,7 @@
   </thead>
   <tbody>
     <tr></tr>
-    <tr *ngFor="let contrat of contrat.contratTravail">
+    <tr *ngFor="let contrat of contrats">
       <td>{{contrat.idContrat}}</td>
       <td>{{contrat.idPersonnel}}</td>
       <td>{{contrat.intitule}}</td>
