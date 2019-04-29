@@ -12,3 +12,7 @@ button:hover{
     font-weight: 600;
     box-shadow: 4px 4px 8px #333;
 }
+
+.info{
+    cursor: pointer;
+}
