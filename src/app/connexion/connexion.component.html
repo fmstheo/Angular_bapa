@@ -7,7 +7,7 @@
     <input name="mdp" [(ngModel)]="identifiants.mdp" placeholder="Votre mot de passe" required>
     <input type="submit" value="Se connecter">
     <input type="reset" value="Annuler">
-    
+    <a href routerLink="/intranet/administration">Intranet</a>
   </form>
   <p *ngIf="!mdpforget">
   <button *ngIf="!mdpmdpforget" (click)="setmdpforget() ; authentification.setConnecte()">Mot de passe oublié</button>
@@ -19,6 +19,7 @@
     <label for="id">Saisissez votre email</label>
     <input type="oublieID" type="email" placeholder="Saisissez votre identifiant">
     <input type="submit" value="Recevoir un email">
+
   </form>
-<a href routerLink="/intranet/administration">Intranet</a>
+
 </section>

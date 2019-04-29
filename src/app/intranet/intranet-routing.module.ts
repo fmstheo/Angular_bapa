@@ -27,7 +27,6 @@ import { AccueilEspacecommunicationComponent } from './espacecommunication/accue
 const routes: Routes = [
 
   { path: 'a-propos', component: AproposComponent },
-  // { path: "espace-communication", component: EspacecommunicationComponent  },
   {
     path: '', component: AccueilComponent,
     
@@ -35,6 +34,7 @@ const routes: Routes = [
       { path: 'a-propos', component: AproposComponent },
       { path: 'administration', loadChildren: './administration/administration.module#AdministrationModule' },
       { path: 'conges', loadChildren: './conges/conges.module#CongesModule'},
+      { path: 'manager', loadChildren: './manager/manager.module#ManagerModule'},
       {
         path: "espace-communication", component: EspacecommunicationComponent,
         children: [
@@ -43,7 +43,7 @@ const routes: Routes = [
           { path: "php", component: PhpComponent },
           { path: "algo", component: AlgoComponent },
           { path: "anglais", component: AnglaisComponent },
-          { path: "angular", component: AngularComponent },
+          { path: "angular", component: AngularComponent },  
           { path: "appache-cordova", component: AppacheCordovaComponent },
           { path: "apprendre-a-apprendre", component: ApprendreAapprendreComponent},
           { path: "html-css", component: HtmlCssComponent },

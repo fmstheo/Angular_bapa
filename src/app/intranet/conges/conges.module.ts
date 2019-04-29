@@ -7,9 +7,10 @@ import { CongesExeptionnelsComponent } from './conges-exeptionnels/conges-exepti
 import { ConsulterDemandeComponent } from './consulter-demande/consulter-demande.component';
 import { DemandeDeCongesComponent } from './demande-de-conges/demande-de-conges.component';
 import { CongesComponent } from './conges/conges.component';
+import { CertifValidationComponent } from './certif-validation/certif-validation.component';
 
 @NgModule({
-  declarations: [RecuperationComponent, CongesExeptionnelsComponent, ConsulterDemandeComponent, DemandeDeCongesComponent, CongesComponent],
+  declarations: [RecuperationComponent, CongesExeptionnelsComponent, ConsulterDemandeComponent, DemandeDeCongesComponent, CongesComponent, CertifValidationComponent],
   imports: [
     CommonModule,
     CongesRoutingModule

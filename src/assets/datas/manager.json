@@ -1,0 +1,15 @@
+[
+    { "nom": "MARTIN", "prenom": "Gautier", "phrase": "Manager / chef de projet", "equipe": "1" },
+    { "nom": "RAMOND", "prenom": "Jean-marc", "phrase": "Manager-DEV / chef de projet", "equipe": "2" },
+    { "nom": "PERON", "prenom": "Rudy", "phrase": "Manager-DEV / chef de projet", "equipe": "2" },
+    { "nom": "BRUTAILS", "prenom": "Marie-pierre", "phrase": "Manager-Beta-Testeuse", "equipe": "3" }
+]
+
+
+
+
+
+
+
+
+

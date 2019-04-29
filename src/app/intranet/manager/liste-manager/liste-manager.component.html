@@ -1,0 +1,19 @@
+<section>
+  <h2>Liste des managers du pôle de DAX</h2>
+
+  <table>
+    <tr>
+      <th>Nom</th>
+      <th>Prénom</th>
+      <th>Qualification</th>
+      <th>Equipe</th>
+    </tr>
+    <tr *ngFor="let user of data.manager">
+      <td>{{ user.nom }}</td>
+      <td>{{ user.prenom }}</td>
+      <td>{{ user.phrase }}</td>
+      <td>{{ user.equipe}}</td>
+    </tr>
+  </table>
+
+</section>

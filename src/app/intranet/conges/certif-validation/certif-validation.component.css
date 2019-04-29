@@ -1,0 +1,26 @@
+label {
+    font-size: 22px !important;
+    font-weight: bold !important;
+    text-align: center;
+}
+  .certification{
+    margin: 10px;
+}
+  .encadrementtitle, h4 {
+    border: solid 2px #4caf50;
+    padding: 2px 10px;
+    box-shadow: 2px 2px 12px rgb(0, 0, 0);
+    border-radius: 10px;
+}
+
+.alert-warning{
+  background-color: #f89406;
+  padding: 10px;
+  font-weight: bold;
+}
+
+.btn-valider{
+  width: 100px;
+}
+
+
