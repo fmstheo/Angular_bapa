@@ -7,6 +7,7 @@ import { Faq } from '../modeles/faq';
 })
 export class FaqService {
   faqListe: Array<Faq>;
+  private faq2;
 
   constructor(public requetes: HttpClient) {
     this.getFaq();
@@ -20,4 +21,5 @@ export class FaqService {
       }
     );
   }
+
 }
