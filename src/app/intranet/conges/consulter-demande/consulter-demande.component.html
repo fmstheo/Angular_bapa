@@ -1,3 +1,40 @@
-<p>
-  consulter-demande works!
-</p>
+<section>
+    <h2>Liste des congés des employés DEV du pôle de DAX</h2>
+  
+    <table>
+      <tr>
+        <th>Nom</th>
+        <th>Type</th>
+        <th>Congès à venir</th>
+        <th>NB semaine(s) congès restant</th>
+        <th>NB semaine(s) congès pris</th>
+      </tr>
+      <tr *ngFor="let user of data.conges">
+        <td>{{ user.nom }}</td>
+        <td>{{ user.phrase }}</td>
+        <td>{{ user.congesavenir }}</td>
+        <td>{{ user.nbcongesrestant}}</td>
+        <td>{{user.nbcongespris}}</td>
+      </tr>
+    </table>
+  
+    <h2>Liste des congés des employés DEV-JUNIOR du pôle de DAX</h2>
+  
+    <table>
+      <tr>
+        <th>Nom</th>
+        <th>Type</th>
+        <th>Congès à venir</th>
+        <th>NB semaine(s) congès restant</th>
+        <th>NB semaine(s) congès pris</th>
+      </tr>
+      <tr *ngFor="let user of datacongesdevjunior.congesdevjunior">
+        <td>{{ user.nom }}</td>
+        <td>{{ user.phrase }}</td>
+        <td>{{ user.congesavenir }}</td>
+        <td>{{ user.nbcongesrestant}}</td>
+        <td>{{user.nbcongespris}}</td>
+      </tr>
+    </table>
+  
+  </section>

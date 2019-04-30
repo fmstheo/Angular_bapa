@@ -1,0 +1,66 @@
+form, .encadrementtitle2 {
+    background-color: white;
+    width: 400px;
+    margin-top: 25px;
+    margin-bottom: 20px;
+    margin-right: auto;
+    margin-left: auto;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    border: solid 2px #4caf50;
+    box-shadow: 2px 2px 12px rgb(0, 0, 0);
+    border-radius: 10px;
+}
+
+label {
+    font-size: 22px !important;
+    font-weight: bold !important;
+    text-align: center;
+}
+
+p {
+    background-color: white;
+    width: 350px;
+    margin-top: 1px;
+    margin-right: auto;
+    margin-left: auto;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+    box-shadow: 2px 2px 12px rgb(0, 0, 0);
+    border-radius: 10px;
+}
+
+.groupe {
+    padding-top: 10px;
+}
+
+.certification{
+    margin: 10px;
+}
+.encadrementtitle, h4 {
+    border: solid 2px #4caf50;
+    padding: 2px 10px;
+    box-shadow: 2px 2px 12px rgb(0, 0, 0);
+    border-radius: 10px;
+}
+
+.input-group-date, .form-group {
+    margin-top: 10px;
+}
+
+.margintop {
+    margin-top: 10px;
+}
+
+.alert-warning{
+    background-color: #f89406;
+    padding: 10px;
+    font-weight: bold;
+}
+
+.btn-valider{
+    width: 100px;
+}

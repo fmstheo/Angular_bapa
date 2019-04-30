@@ -12,5 +12,6 @@ export class AuthService {
   setConnecte() {
     this.connecte = !this.connecte;
   }
+  
 
 }

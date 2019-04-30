@@ -8,10 +8,14 @@ import { CongesdevjuniorService } from 'src/app/services/congesdevjunior.service
   styleUrls: ['./gestion-manager.component.css']
 })
 export class GestionManagerComponent implements OnInit {
+  
+  constructor(public data:CongesService, public datacongesdevjunior:CongesdevjuniorService) {
 
-  constructor(public data:CongesService, public datacongesdevjunior:CongesdevjuniorService) { }
+   }
 
+ 
   ngOnInit() {
+ 
   }
 
 }

@@ -8,6 +8,7 @@
       <th>Congès à venir</th>
       <th>NB semaine(s) congès restant</th>
       <th>NB semaine(s) congès pris</th>
+      <th>Acceptation / Refus</th>
     </tr>
     <tr *ngFor="let user of data.conges">
       <td>{{ user.nom }}</td>
@@ -15,6 +16,7 @@
       <td>{{ user.congesavenir }}</td>
       <td>{{ user.nbcongesrestant}}</td>
       <td>{{user.nbcongespris}}</td>
+      <td><a href=""><img [src]="'assets/datas/Images/Valider.png'" alt="imgValider.png" title="Acceptation congés"></a><a href=""><img [src]="'assets/datas/Images/Annuler.png'" alt="imgAnnuler.png" title="Refus congés"></a></td>
     </tr>
   </table>
 
@@ -27,6 +29,7 @@
       <th>Congès à venir</th>
       <th>NB semaine(s) congès restant</th>
       <th>NB semaine(s) congès pris</th>
+      <th>Acceptation / Refus</th>
     </tr>
     <tr *ngFor="let user of datacongesdevjunior.congesdevjunior">
       <td>{{ user.nom }}</td>
@@ -34,6 +37,7 @@
       <td>{{ user.congesavenir }}</td>
       <td>{{ user.nbcongesrestant}}</td>
       <td>{{user.nbcongespris}}</td>
+      <td><a href=""><img [src]="'assets/datas/Images/Valider.png'" alt="imgValider.png" title="Acceptation congés"></a><a href=""><img [src]="'assets/datas/Images/Annuler.png'" alt="imgAnnuler.png" title="Refus congés"></a></td>
     </tr>
   </table>
 

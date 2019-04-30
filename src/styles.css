@@ -26,7 +26,7 @@ input[type="submit"], input[type="reset"], button{
     margin-top: 10px;
     margin-bottom: 10px;
     width: 80%;
-    color: white;
+    color: rgb(255, 255, 255);
     border-radius: 4px;
     text-shadow: 0 1px 1px rgba(0, 0, 0, 0.2);
     
@@ -39,7 +39,9 @@ form input.ng-valid{
 form input.ng-invalid{
     border: 3px solid red;
 }
-
+button {
+  color: rgb(0, 0, 0);
+}
 table {
     border-collapse: collapse;
     width: 100%;
