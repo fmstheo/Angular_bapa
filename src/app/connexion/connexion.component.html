@@ -8,6 +8,7 @@
     <input type="submit" value="Se connecter">
     <input type="reset" value="Annuler">
   </form>
+  
   <p *ngIf="!mdpforget"> 
       <label *ngIf="authentification.connecte">Vos identifiants sont incorrects</label>
   <button *ngIf="!mdpforget" (click)="setmdpforget(); authentification.setConnecte()">Mot de passe oublié</button>
