@@ -23,6 +23,10 @@ button{
     border: 1px solid black;
     box-shadow: 2px 2px 4px #333;
 }
+button:hover{
+    font-weight: 600;
+    box-shadow: 4px 4px 8px #333;
+}
 button:first-child {
     background-color: rgb(211, 120, 104);
 }

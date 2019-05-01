@@ -1,11 +1,48 @@
-button{
+.info{
+    cursor: pointer;
+}
+table th{
     background-color: #0E8B8B;
-    color: whitesmoke;
-    margin-bottom: 2em;
+}
+table input{
+    width: 80%;
+    text-align: center;
+    border-radius: 6px;
+}
+
+ h2:hover + table thead{
+    color:red;
+}
+
+button{
+    margin: 0 12px 28px 12px;
+    border-radius: 6px;
+    width: 8em;
+    color: white;
+    padding: 6px 0;
     border: 1px solid black;
-    padding: 0.4rem 0.8rem;
-    border-radius: 4px;
-    box-shadow: 2px 2px 6px #333;
+    box-shadow: 2px 2px 4px #333;
+}
+button:hover{
+    font-weight: 600;
+    box-shadow: 4px 4px 8px #333;
+}
+button:first-child {
+    background-color: rgb(211, 120, 104);
+}
+button:last-child {
+    background-color: #0E8B8B;
+}
+
+table tbody tr td{
+    border-bottom: 0;
+} 
+table{
+    border: 1px solid black;
+}  
+tbody tr:last-child td{
+    border-top:1px dotted #555;
+    padding: 6px;
 }
 
 button:hover{
@@ -13,6 +50,3 @@ button:hover{
     box-shadow: 4px 4px 8px #333;
 }
 
-.info{
-    cursor: pointer;
-}
