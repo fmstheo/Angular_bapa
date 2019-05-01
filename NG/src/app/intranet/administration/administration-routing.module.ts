@@ -4,6 +4,7 @@ import { GestionUtilisateurComponent } from './gestion-utilisateur/gestion-utili
 import { ContratTravailComponent } from './contrat-travail/contrat-travail.component';
 import { EmployeComponent } from './gestion-utilisateur/employe/employe.component';
 import { AdministrationGuard } from 'src/app/services/administration.guard';
+import { PersonnelComponent } from './personnel/personnel.component';
 
 const routes: Routes = [
   // {
@@ -16,6 +17,7 @@ const routes: Routes = [
   { path: '', component: GestionUtilisateurComponent },
   // { path: '', redirectTo: 'users' },
   { path: 'contrat-travail', component: ContratTravailComponent, canActivate:[AdministrationGuard] },
+  { path:'personnel', component: PersonnelComponent },
   { path: ':idEmploye', component: EmployeComponent }
 ];
 

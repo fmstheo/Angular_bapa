@@ -8,12 +8,13 @@ import { GestionUtilisateurComponent } from './gestion-utilisateur/gestion-utili
 import { AccueilAdminComponent } from './accueil-admin/accueil-admin.component';
 import { ContratTravailService } from './services/contrat-travail.service';
 import { EmployeComponent } from './gestion-utilisateur/employe/employe.component';
+import { PersonnelComponent } from './personnel/personnel.component';
 
 @NgModule({
   declarations: [
     ContratTravailComponent, 
     GestionUtilisateurComponent, 
-    AccueilAdminComponent, EmployeComponent, 
+    AccueilAdminComponent, EmployeComponent, PersonnelComponent, 
   ],
   imports: [
     CommonModule,

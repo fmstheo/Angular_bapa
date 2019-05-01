@@ -1,0 +1,54 @@
+<h2>Tableau des employés :</h2>
+<em>( Récupération faite via API REST / PHP : oooooh yearrrrr!!! )</em>
+<section>
+  <button (click)="onCancel()">Annuler</button>
+  <button (click)="onSave()">Enregistrer</button>
+</section>
+<table>
+  <thead>
+    <tr>
+      <th>Id Employé</th>
+      <th>Téléphone</th>
+      <th>Nom employé</th>
+      <th>Prénom Employé</th>
+      <th>Poste</th>
+      <th>Login de connexion</th>
+      <th>Id service</th>
+      <th>Email</th>
+      <th>Matricule</th>
+      <th>Id Manager</th>
+      <th>Activation compte</th>
+    </tr>
+  </thead>
+  <tbody *ngFor="let personnel of personnel">
+    <tr (click)="onModifier(personnel.idPersonnel)" class="info">
+      <td>{{personnel.idPersonnel}}</td>
+      <td>{{personnel.telP}}</td>
+      <td>{{personnel.nomP | uppercase}}</td>
+      <td>{{personnel.prenomP}}</td>
+      <td>{{personnel.postePrincipalP}}</td>
+      <td>{{personnel.loginP}}</td>
+      <td>{{personnel.idService}}</td>
+      <td>{{personnel.email}}</td>
+      <td>{{personnel.matricule}}</td>
+      <td>{{personnel.idManager}}</td>
+      <td>{{personnel.actif}}</td>
+    </tr>
+    <!-- <tr >  -->
+    <tr [@animInput]="!isOpen ? 'close' : idModif === personnel.idPersonnel ? 'open': 'close'">
+      <td class="suppr">SUPPRIMER EMPLOYÉ</td>
+      <td><input type="text" [(ngModel)]="personnel.telP"></td>
+      <td><input type="text" [(ngModel)]="personnel.nomP"></td>
+      <td><input type="text" [(ngModel)]="personnel.prenomP"></td>
+      <td><input type="text" [(ngModel)]="personnel.postePrincipalP"></td>
+      <td><input type="text" [(ngModel)]="personnel.loginP"></td>
+      <td><input type="text" [(ngModel)]="personnel.idService"></td>
+      <td><input type="text" [(ngModel)]="personnel.email"></td>
+      <td><input type="text" [(ngModel)]="personnel.matricule"></td>
+      <td><input type="text" [(ngModel)]="personnel.idManager"></td>
+      <td><input type="number" min="0" max="1" [(ngModel)]="personnel.actif"></td>
+    </tr>
+  </tbody>
+</table>
+
+<form></form>

@@ -1,12 +1,13 @@
 <nav>
   <ul>
-    <li><a href routerLink="/intranet" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}">Dashboard</a></li>
+    <li><a href routerLink="/intranet" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}">Accueil</a></li>
     <li><a href routerLink="/intranet/conges" routerLinkActive="active">Congés</a></li>
     <!-- <li><a href routerLink="/intranet/com" routerLinkActive="active">Espace communication</a></li>
     <li><a href routerLink="/intranet/manager" routerLinkActive="active">Accès manager</a></li> -->
 
     <ng-template [ngIf]="token.hLevel == 3">
       <li><a href routerLink='/intranet/administration' routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}">Gestion utilisateur</a></li>
+      <li><a href routerLink='/intranet/administration/personnel' routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}">Gestion personnel</a></li>
       <li><a href routerLink='/intranet/administration/contrat-travail' routerLinkActive="active">Contrat de travail</a></li>
     </ng-template>
 
