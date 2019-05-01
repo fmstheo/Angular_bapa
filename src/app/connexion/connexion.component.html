@@ -1,6 +1,6 @@
 <section>
   <h1>Authentification :</h1>
-  <div *ngIf="false">
+  <div *ngIf="!isAuth">
     <form [formGroup]="connexionForm" (ngSubmit)="onSubmit()">
       <label for="email">Adresse mail :</label>
       <input type="text" id="email" formControlName="email" placeholder="@">
@@ -18,7 +18,7 @@
     <p>Mot de passe oublié ? &nbsp; <a href routerLink="/forgottenPwd">Réinitialiser le!</a></p>
   </div>
 
-  <div>
+  <div *ngIf="isAuth">
     <p>Vous êtes déjà connecté !</p>
     <button type="button" [ngClass]="{'btnActive' : true}">Se déconnecter</button>
     <hr>

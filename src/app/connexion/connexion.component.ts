@@ -3,6 +3,7 @@ import { Id } from '../modeles/id';
 import { AuthService } from '../services/auth.service';
 import { FormBuilder, FormGroup, Validators } from '@angular/forms';
 import { Router } from '@angular/router';
+import * as firebase from 'firebase';
 
 @Component({
   selector: 'app-connexion',
@@ -10,7 +11,7 @@ import { Router } from '@angular/router';
   styleUrls: ['./connexion.component.css']
 })
 export class ConnexionComponent implements OnInit {
-
+  isAuth: boolean;
   connexionForm: FormGroup;
   errorMessage: string;
 
@@ -21,6 +22,15 @@ export class ConnexionComponent implements OnInit {
     private router: Router) { }
 
   ngOnInit() {
+    firebase.auth().onAuthStateChanged(
+      (user) => {
+        if(user) {
+          this.isAuth = true;
+        } else {
+          this.isAuth = false;
+        }
+      }
+    );
     this.initForm();
   }
 
