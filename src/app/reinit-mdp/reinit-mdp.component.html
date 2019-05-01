@@ -1,0 +1,16 @@
+<section>
+  <h1>Mot de passe oublié :</h1>
+  <form [formGroup]="resetPwdForm" (ngSubmit)="onSubmit()">
+    <label for="email">Votre adresse mail :</label>
+    <input type="text" id="email" formControlName="email" placeholder="@">
+    
+    <p>
+      <strong>Cette action réinitialisera votre mot de passe !</strong><br>
+      <em>( Un email vous sera envoyé )</em>
+    </p>
+    <button [ngClass]="{'btnActive' : resetPwdForm.valid}" type="submit" [disabled]="resetPwdForm.invalid">Réinitialiser</button>
+  </form>
+  <p>{{ errorMessage }}</p>
+  <hr>
+  <a href routerLink="">Retour</a>
+</section>

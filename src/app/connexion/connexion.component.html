@@ -1,28 +1,27 @@
 <section>
-  <form *ngIf="!authentification.connecte && !oublie" (ngSubmit)="envoieID(form1)" #form1="ngForm">
-    <label for="id">Votre pseudo : </label>
-    <div class="alerte" *ngIf="pseudo.control.invalid">Merci de renseigner un pseudo valide <br>(6 caractères minimum)</div>
-    <input type="text" name='id' [(ngModel)]="identifiants.id" #pseudo="ngModel" placeholder="Votre pseudo" minlength="6" required>
-    <label for="mdp">Votre mot de passe : </label>
-    <input type="text" name='mdp' [(ngModel)]="identifiants.mdp" placeholder="Votre mot de passe" required>
-    <div class="btn">
-      <input type="reset" value="Annuler">
-      <input type="submit" value="Se connecter">
-    </div>
-  </form>
-  
-  <button id="btnDeco" *ngIf='authentification.connecte' (click)="envoieID()">Se déconnecter</button>
-  <button id="oublieMdp" *ngIf='!oublie && !authentification.connecte' (click)="setForgotPwd()">Mot de passe oublié ?</button>
+  <h1>Authentification :</h1>
+  <div *ngIf="false">
+    <form [formGroup]="connexionForm" (ngSubmit)="onSubmit()">
+      <label for="email">Adresse mail :</label>
+      <input type="text" id="email" formControlName="email" placeholder="@">
+      <br>
+      <label for="password">Mot de passe :</label>
+      <input type="password" id="password" formControlName="password" placeholder="***********">
+      <button [ngClass]="{'btnActive' : connexionForm.valid}" type="submit" [disabled]="connexionForm.invalid">Se
+        connecter</button>
+    </form>
+    <p>{{ errorMessage }}</p>
 
-  <div>
-    <a href routerLink="/intranet">rentrez sur le site</a>
+    <hr>
+
+    <p>Pas encore de compte? &nbsp; <a href routerLink="/signeUp">Créez-en un!</a></p>
+    <p>Mot de passe oublié ? &nbsp; <a href routerLink="/forgottenPwd">Réinitialiser le!</a></p>
   </div>
 
-  <form *ngIf='oublie' (ngSubmit)="setForgotPwd()">
-    <label for="">Saisissez votre adresse email : </label>
-    <input type="text" name="" placeholder="Saisissez votre identifiant ou votre adresse mail" size="38" required>
-    <div class="btn">
-      <input type="submit" value="Recevoir un email">
-    </div>
-  </form>
+  <div>
+    <p>Vous êtes déjà connecté !</p>
+    <button type="button" [ngClass]="{'btnActive' : true}">Se déconnecter</button>
+    <hr>
+    <a href routerLink="/intranet">Revenir sur le site</a>
+  </div>
 </section>

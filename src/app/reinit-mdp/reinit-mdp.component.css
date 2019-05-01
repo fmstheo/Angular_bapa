@@ -19,7 +19,7 @@ form {
 }
 
 form input {
-    margin: 10px;
+    margin: 20px;
     width: 16rem;
     height: 1.4rem;
     border-radius: 6px;
@@ -27,42 +27,6 @@ form input {
     color:teal;
 }
 
-.btn input {
-    border-radius: 6px;
-    width: 12em;
-    padding: 6px 0;
-    border: 1px solid black;
-    box-shadow: 2px 2px 2px #333;
-}
-
-input[value="Se connecter"], input[value="Recevoir un email"] {
-    background-color: teal;
-}
-
-input[value="Annuler"] {
-    background-color: #999;
-}
-
-input[type='text'] {
-    
-}
-
-#btnDeco {
-    display: block;
-    margin: auto;
-}
-
-#oublieMdp {
-    display: block;
-    margin: 30px auto;
-}
-
-.alerte{
-    color: tomato;
-    font-style: oblique;
-    font-size: 14px;
-    text-align: center;
-}
 hr{
     color: white;
     margin: 2em;
@@ -80,7 +44,7 @@ button{
     color: #777;
     border-radius: 6px;
     width: 12em;
-    margin-top: 2em;
+    margin-top: 1.2em;
     padding: 6px 0;
     border: 1px solid #555;
     
