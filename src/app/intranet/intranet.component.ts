@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { TokenService } from '../services/token.service';
 
 @Component({
   selector: 'app-intranet',
@@ -7,9 +8,14 @@ import { Component, OnInit } from '@angular/core';
 })
 export class IntranetComponent implements OnInit {
 
-  constructor() { }
+  constructor(public token: TokenService) { 
+    // controle etat du token
+console.log("Etat du token dans intranet :", this.token.connectiontoken);
+
+  }
 
   ngOnInit() {
+   
   }
 
 }

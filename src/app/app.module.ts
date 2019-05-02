@@ -11,6 +11,10 @@ import { AuthService } from './services/auth.service';
 import { TokenService } from './services/token.service';
 import { DevjuniorService } from './services/devjunior.service';
 import { DevemployeService } from './services/devemploye.service';
+import { CongesService } from './services/conges.service';
+import { CongesdevjuniorService } from './services/congesdevjunior.service';
+import { ManagerService } from './services/manager.service';
+import { UseridentifiantsService } from './services/useridentifiants.service';
 
 
 
@@ -26,7 +30,7 @@ import { DevemployeService } from './services/devemploye.service';
     AppRoutingModule,
     HttpClientModule
   ],
-  providers: [AuthService, TokenService, DevjuniorService, DevemployeService],
+  providers: [AuthService, TokenService, DevjuniorService, DevemployeService, CongesService, CongesdevjuniorService, ManagerService, UseridentifiantsService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

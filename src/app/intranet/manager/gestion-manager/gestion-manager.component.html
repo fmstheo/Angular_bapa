@@ -16,7 +16,7 @@
       <td>{{ user.congesavenir }}</td>
       <td>{{ user.nbcongesrestant}}</td>
       <td>{{user.nbcongespris}}</td>
-      <td><a href=""><img [src]="'assets/datas/Images/Valider.png'" alt="imgValider.png" title="Acceptation congés"></a><a href=""><img [src]="'assets/datas/Images/Annuler.png'" alt="imgAnnuler.png" title="Refus congés"></a></td>
+      <td><a href routerLink="/intranet/manager"><img [src]="'assets/datas/Images/Valider.png'" alt="imgValider.png" title="Acceptation congés"></a><a href routerLink="/intranet/manager"><img [src]="'assets/datas/Images/Annuler.png'" alt="imgAnnuler.png" title="Refus congés"></a></td>
     </tr>
   </table>
 
@@ -37,7 +37,27 @@
       <td>{{ user.congesavenir }}</td>
       <td>{{ user.nbcongesrestant}}</td>
       <td>{{user.nbcongespris}}</td>
-      <td><a href=""><img [src]="'assets/datas/Images/Valider.png'" alt="imgValider.png" title="Acceptation congés"></a><a href=""><img [src]="'assets/datas/Images/Annuler.png'" alt="imgAnnuler.png" title="Refus congés"></a></td>
+      <td><a href routerLink="/intranet/manager"><img [src]="'assets/datas/Images/Valider.png'" alt="imgValider.png" title="Acceptation congés"></a><a href routerLink="/intranet/manager"><img [src]="'assets/datas/Images/Annuler.png'" alt="imgAnnuler.png" title="Refus congés"></a></td>
+    </tr>
+  </table>
+
+  <h2>Liste des identifiants des administrateurs du pôle de DAX</h2>
+
+  <table>
+    <tr>
+      <th>Identifiant</th>
+      <th>Mot de passe</th>
+      <th>Modifier / Supprimer</th>
+    </tr>
+    <tr *ngFor="let user of useridentifiants.useridentifiants.id1">
+      <td>{{ user.id}}</td>
+      <td>{{ user.mdp }}</td>
+      <td><a href routerLink="/intranet/manager"><img [src]="'assets/datas/Images/Modifier.png'" alt="imgModifier.png" title="Modifier identifiant"></a><a href routerLink="/intranet/manager"><img [src]="'assets/datas/Images/Annuler.png'" alt="imgAnnuler.png" title="Supprimer identifiant"></a></td>
+    </tr>
+    <tr *ngFor="let user of useridentifiants.useridentifiants.id2">
+      <td>{{ user.id}}</td>
+      <td>{{ user.mdp }}</td>
+      <td><a href routerLink="/intranet/manager"><img [src]="'assets/datas/Images/Modifier.png'" alt="imgVModifier.png" title="Modifier identifiant"></a><a href routerLink="/intranet/manager"><img [src]="'assets/datas/Images/Annuler.png'" alt="imgAnnuler.png" title="Supprimer identifiant"></a></td>
     </tr>
   </table>
 

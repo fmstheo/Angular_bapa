@@ -6,15 +6,16 @@
     <label for="id">Saisissez votre mot de passe</label>
     <input name="mdp" [(ngModel)]="identifiants.mdp" minlength="6" placeholder="Votre mot de passe" required>
     <input type="submit" value="Se connecter">
-    <input type="reset" value="Annuler">
+    <input type="reset" value="Annuler" >
   </form>
   
-  <p *ngIf="!mdpforget"> 
+  <p *ngIf="!mdpforget"  > 
       <label *ngIf="authentification.connecte">Vos identifiants sont incorrects</label>
   <button *ngIf="!mdpforget" (click)="setmdpforget(); authentification.setConnecte()">Mot de passe oublié</button>
     <button *ngIf="authentification.connecte" (click)="authentification.setConnecte()">Essayer à nouveau</button>
   </p>
   
+  <!-- Mot de passe oublie -->
   <form *ngIf="mdpforget" (ngSubmit)="envoieID(); setmdpforget()">
     <label for="id">Saisissez votre email</label>
     <input type="oublieID" type="email" placeholder="Saisissez votre identifiant">
