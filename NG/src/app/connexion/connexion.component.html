@@ -20,7 +20,7 @@
 
   <div *ngIf="isAuth">
     <p>Vous êtes déjà connecté !</p>
-    <button type="button" [ngClass]="{'btnActive' : true}">Se déconnecter</button>
+    <button type="button" [ngClass]="{'btnActive' : true}" (click)="onSignOut()">Se déconnecter</button>
     <hr>
     <a href routerLink="/intranet">Revenir sur le site</a>
   </div>

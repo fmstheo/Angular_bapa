@@ -54,6 +54,11 @@ export class ConnexionComponent implements OnInit {
       }
     );
   }
+
+  onSignOut(){
+    this.authService.signOutUser();
+  }
+  
   setForgotPwd() {
     this.oublie = !this.oublie;
   }
