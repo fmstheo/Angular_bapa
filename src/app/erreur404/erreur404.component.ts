@@ -10,6 +10,7 @@ export class Erreur404Component implements OnInit {
   constructor() { }
 
   ngOnInit() {
+    
   }
 
 }

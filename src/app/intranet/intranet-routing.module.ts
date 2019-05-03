@@ -2,7 +2,7 @@ import { NgModule, Component } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
 import { AccueilComponent } from './accueil/accueil.component';
 import { AproposComponent } from './apropos/apropos.component';
-// import { AdministrationModule } from './administration/administration.module';
+import { AdministrationModule } from './administration/administration.module';
 // import { AdministrationComponent } from './administration/administration/administration.component';
 import { EspacecommunicationComponent } from './espacecommunication/espacecommunication.component';
 import { PhpComponent } from './espacecommunication/php/php.component';
@@ -24,14 +24,13 @@ import { UmlComponent } from './espacecommunication/uml/uml.component';
 import { AccueilEspacecommunicationComponent } from './espacecommunication/accueil-espacecommunication/accueil-espacecommunication.component';
 
 
+
 const routes: Routes = [
 
   { path: 'a-propos', component: AproposComponent },
   {
     path: '', component: AccueilComponent,
-    
     children: [
-      { path: 'a-propos', component: AproposComponent },
       { path: 'administration', loadChildren: './administration/administration.module#AdministrationModule' },
       { path: 'conges', loadChildren: './conges/conges.module#CongesModule'},
       { path: 'manager', loadChildren: './manager/manager.module#ManagerModule'},

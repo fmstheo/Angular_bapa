@@ -24,12 +24,15 @@ import { PrestashopComponent } from './espacecommunication/prestashop/prestashop
 import { UmlComponent } from './espacecommunication/uml/uml.component';
 import { IntranetComponent } from './intranet.component';
 import { AccueilEspacecommunicationComponent } from './espacecommunication/accueil-espacecommunication/accueil-espacecommunication.component';
+import { HttpClientModule } from '@angular/common/http';
+
 
 @NgModule({
   declarations: [AccueilComponent, MenuComponent, FooterComponent, AproposComponent, EspacecommunicationComponent, PhpComponent, AlgoComponent, AnglaisComponent, AngularComponent, AppacheCordovaComponent, ApprendreAapprendreComponent, HtmlCssComponent, DroitsInformatiqueComponent, GestionDeProjetComponent, GitComponent, JavaComponent, JavaScriptComponent, NodeJsComponent, PrestashopComponent, UmlComponent, IntranetComponent, AccueilEspacecommunicationComponent],
   imports: [
     CommonModule,
-    IntranetRoutingModule
+    IntranetRoutingModule,
+    HttpClientModule
   ]
 })
 export class IntranetModule { }
