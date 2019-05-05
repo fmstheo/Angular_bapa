@@ -7,6 +7,7 @@ import { DdeCongesComponent } from './dde-conges/dde-conges.component';
 import { ConsultCongesComponent } from './consult-conges/consult-conges.component';
 import { CongesExceptionnelsComponent } from './conges-exceptionnels/conges-exceptionnels.component';
 import { AccueilCongesComponent } from './accueil-conges/accueil-conges.component';
+import { CongesService } from '../services/conges.service';
 
 @NgModule({
   declarations: [
@@ -19,9 +20,9 @@ import { AccueilCongesComponent } from './accueil-conges/accueil-conges.componen
     CommonModule,
     FormsModule,
     HttpClientModule
-  ],
+    ],
 
-  providers:[],
+  providers:[CongesService],
 
 })
 

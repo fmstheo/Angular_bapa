@@ -1,11 +1,11 @@
 export interface Conges{
     id:number;
-    idPersonnel:number;
+    idPersonnel:string;
     dateDebutConges:string;
-    heureDebutConges:string;
+    matin_amD:string;
     dateFinConges:string;
-    heureFinConges:string;
+    matin_amF:string;
     dateRepriseEffective:string;
+    matin_amR:string;
     motifConges:string;
-    modifCongesExceptionnels?:string;
 }

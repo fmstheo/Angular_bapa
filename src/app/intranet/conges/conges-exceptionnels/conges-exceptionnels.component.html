@@ -2,30 +2,46 @@
 
   <h1>Demande de congés exceptionnels</h1>
 
-  <form>
+  <form (ngSubmit)="onSubmit(f)" #f="ngForm">
 
-      <label for="dateDebutConges">Veuillez saisir votre date de départ : </label>
-      <input class='debutConges' type="date" id="dateDebutConges" name="dateDebutConges" />
+      <label for="dateDebutConges">Veuillez saisir votre date de début de congés : </label>
+      <input class='debutConges' type="date" id="dateDebutConges" name="dateDebutConges"ngModel required/>
+      <select id="matin_amD" class='debutConges' name="matin_amD" ngModel required>
+          <option value="matin_amD">Matin</option> 
+          <option value="matin_amD">Après-midi</option>
+      </select>
+   
+      <label for="dateFinConges">Veuillez saisir votre date de fin de congés : </label>
+      <input class='finConges' type="date" id="dateFinConges" name="dateFinConges" ngModel required/>
+      <select id="matin_amF" class='debutConges' name="matin_amF" ngModel required>
+          <option value="matin_amF">Matin</option> 
+          <option value="matin_amF">Après-midi</option>
+      </select>
+    
+      <label for="dateRepriseEffective">Veuillez saisir votre date de reprise effective : </label>
+      <input class='repriseEffective' type="date" id="dateRepriseEffective" name="dateRepriseEffective" ngModel required/>
+        <select id="matin_amR" class='repriseEffective' name="matin_amR" ngModel required>
+            <option value="matin_amR">Matin</option> 
+            <option value="matin_amR">Après-midi</option>
+        </select>
 
-      <label for="heureDebutConges">Veuillez saisir votre heure de départ : </label>
-      <input class='debutConges' type="time" id="heure_depart" name="heure_depart" />
+        <label for="motifConges">Motif des congés exceptionnels :</label>
+  
+        <div *ngFor="let exception of this.congesService.motifConges.exceptionnels; let i=index">
+        <div (click)="onClick(i, exception.type)">{{ exception.type }}</div>
+        <div *ngIf="isClick==true">
+        <ul *ngFor="let info of exception.infos; let j=index">
+        <li (click)="onSelect(j, info)">{{info}}</li>
+        </ul>
+        </div>
+        </div>
+  
+      
+      <input type="checkbox" name="certification" ngModel="isCertif" checked>Je certifie sur l'honneur l'exactitude des informations saisies
 
+      <input type="submit" name="btn" [disabled]="f.invalid" value="Valider" >
+  
 
-      <label for="date_retour">Veuillez saisir votre date de retour : </label>
-      <input class='retour' type="date" id="date_retour" name="date_retour" min="<?$_GET['date_depart']?>"/>
-
-      <label for="heure_retour">Veuillez saisir votre heure de retour : </label>
-      <input class='retour' type="time" id="heure_retour" name="heure_retour" />
-
-      <label for="collaborateur">Choisissez un collaborateur :</label>
-      <?php echo $html_c; ?>
-
-      <label for="vehicule">Choissisez un véhicule : </label>
-      <?php echo $html_v;?>
-
-      <input class='btn' type="submit" name="btn" value="Ajouter"/>
-
-
-  </form>
-
+      </form>
+      
 </section>
