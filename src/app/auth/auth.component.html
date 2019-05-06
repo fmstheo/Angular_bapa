@@ -1,0 +1,21 @@
+<h2>Veuillez vous connectez</h2>
+<div class="alert alert-danger" *ngIf="error">
+{{ msgError }}
+</div>
+
+<form class="form form-group" (ngSubmit)="connexionService.connecte = true">
+<input name="id" class="form-control" *ngIf="!authStatus" type="text" placeholder="Identifiant" [(ngModel)]="pseudo"/><br/>
+</form>
+
+<form class="form form-group" (ngSubmit)="connexionService.connecte = true">
+<input name="mdp" class="form-control" *ngIf="!authStatus" type="password" placeholder="Mot de passe" [(ngModel)]="mdp"/><br/>
+
+
+<button class="btn btn-success"
+*ngIf="!authStatus"
+(click)="onSignIn()">Connexion</button>
+
+</form>
+
+
+

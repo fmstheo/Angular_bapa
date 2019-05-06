@@ -1,23 +1,36 @@
 import { Injectable } from '@angular/core';
-/**
- * Service permettant de gérer l'état de la connexion des utilisateurs
- * @class
- * @injectable
- */
+
 @Injectable({
   providedIn: 'root'
 })
 export class AuthService {
-  /**
-   * Variable indiquant si nous sommes connectés ou non
-   */
-  connecte:boolean=false;
 
-  constructor() {}
-  /**
-   * Methode nous permettant de rédéfinir l'état de la connexion
-   */
-  setConnecte(){
-    this.connecte = !this.connecte;
+  isAuth = false;
+
+  authentification = [
+    {
+      identifiant: 'utilisateur',
+      motdepasse: '123456'
+    },
+  ];
+  signIn() {
+
+    return new Promise(
+      (resolve, reject) => {
+        setTimeout(
+          () => {
+            this.isAuth = true;
+            resolve(true);
+          }, 1000
+        );
+      }
+    );
   }
+
+  signOut() {
+    this.isAuth = false;
+  }
+
+
+  constructor() { }
 }
