@@ -9,6 +9,9 @@ import { Observable } from  'rxjs';
 export class ApiService {
 
   PHP_API_SERVER = "http://127.0.0.1:80";
+  //cheminAPI = "/Angular/BapaGit/Angular_bapa/API"; // home
+  
+  cheminAPI = "/bapaWeb/API"; // pulseo
   personnel:Personnel;
 
   constructor(private httpClient: HttpClient) {}
