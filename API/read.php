@@ -2,32 +2,28 @@
 
 require 'database.php';
 
-$personnel = [];
+// requête
 $sql = "SELECT * FROM personnel";
 
-if($result = mysqli_query($con,$sql))
-{
-  $i = 0;
-  while($row = mysqli_fetch_assoc($result))
-  {
-    $personnel[$i]['idPersonnel']    = $row['idPersonnel'];
-    $personnel[$i]['telP'] = $row['telP'];
-    $personnel[$i]['nomP'] = $row['nomP'];
-    $personnel[$i]['prenomP'] = $row['prenomP'];
-    $personnel[$i]['postePrincipalP'] = $row['postePrincipalP'];
-    $personnel[$i]['loginP'] = $row['loginP'];
-    $personnel[$i]['mdpP'] = $row['mdpP'];
-    $personnel[$i]['idService'] = $row['idService'];
-    $personnel[$i]['email'] = $row['email'];
-    $personnel[$i]['matricule'] = $row['matricule'];
-    $personnel[$i]['idManager'] = $row['idManager'];
-    $personnel[$i]['actif'] = $row['actif'];
-    $i++;
-  }
+// récupération de la table 'personnel'
+$result = $db->query($sql)->fetchAll();
 
-  echo json_encode($personnel);
+// création tableau vide
+$personnel = array();
+
+// on parcourt les lignes retournées
+foreach ($result as $employe) {
+  // cré d'un tableau vide à chaque occurence de ligne
+  $infoPersonnel = array();
+
+  // on parcourt chaque infos de la ligne
+  foreach ($employe as $key => $value) {
+    // le retour étant de type 'clé->'value' + 'index->value' , on ne garde que 'clé->value'
+    if (!is_int($key)) {
+      $infoPersonnel[$key] = $value;
+    }
+  }
+  $personnel[] = $infoPersonnel;
 }
-else
-{
-  http_response_code(404);
-}
+
+echo json_encode($personnel);

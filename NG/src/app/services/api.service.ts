@@ -14,7 +14,9 @@ export class ApiService {
   constructor(private httpClient: HttpClient) {}
 
   readPersonnel(): Observable<Personnel[]>{
-    return this.httpClient.get<Personnel[]>(`${this.PHP_API_SERVER}/Angular/BapaGit/Angular_bapa/API/read.php`);
+    // return this.httpClient.get<Personnel[]>(`${this.PHP_API_SERVER}/Angular/Angular_bapa/API/read.php`);
+    // return this.httpClient.get<Personnel[]>(`${this.PHP_API_SERVER}/API/read.php?getPersonnelTable()`);
+    return this.httpClient.get<Personnel[]>(`${this.PHP_API_SERVER}/Angular/bapaWeb/API/read.php`);
   }
 
   createPersonnel(personnel: Personnel): Observable<Personnel[]>{
